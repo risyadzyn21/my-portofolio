@@ -1,4 +1,10 @@
-import { AboutMe, Hero, Projects, Skills } from '@/components/sections';
+import {
+  AboutMe,
+  Contact,
+  Hero,
+  Projects,
+  Skills,
+} from '@/components/sections';
 
 export default function Home() {
   return (
@@ -16,6 +22,12 @@ export default function Home() {
       </section>
       <section id="projects">
         <Projects />
+      </section>
+      {/* <section id="experience">
+        <Experience />
+      </section> */}
+      <section id="contact">
+        <Contact />
       </section>
     </main>
   );
