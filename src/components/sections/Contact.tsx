@@ -95,32 +95,20 @@ const Contact = () => {
                 <h3 className="text-xl font-bold mb-4">Follow me</h3>
                 <div className="grid grid-cols-2 gap-4">
                   <a
-                    href="#"
+                    href="https://github.com/risyadzyn21"
+                    target="_blank"
                     className="flex items-center gap-3 p-3 rounded-lg bg-secondary/50 hover:bg-secondary transition-smooth hover-scaleup"
                   >
                     <Github className="w-5 h-5" />
                     <span>GitHub</span>
                   </a>
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/risyad-ziyan-arkham/"
+                    target="_blank"
                     className="flex items-center gap-3 p-3 rounded-lg bg-secondary/50 hover:bg-secondary transition-smooth hover-scaleup"
                   >
                     <Linkedin className="w-5 h-5" />
                     <span>LinkedIn</span>
-                  </a>
-                  <a
-                    href="#"
-                    className="flex items-center gap-3 p-3 rounded-lg bg-secondary/50 hover:bg-secondary transition-smooth hover-scaleup"
-                  >
-                    <Twitter className="w-5 h-5" />
-                    <span>Twitter</span>
-                  </a>
-                  <a
-                    href="#"
-                    className="flex items-center gap-3 p-3 rounded-lg bg-secondary/50 hover:bg-secondary transition-smooth hover-scaleup"
-                  >
-                    <Mail className="w-5 h-5" />
-                    <span>Email</span>
                   </a>
                 </div>
               </Card>

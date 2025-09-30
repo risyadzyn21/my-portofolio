@@ -1,10 +1,16 @@
 @import 'tailwindcss';
 
+/* Global smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
+/* ======================
+   THEME CONFIG
+====================== */
+
 @theme {
+  /* ===== Breakpoints ===== */
   --breakpoint-*: initial;
   --breakpoint-sm: 480px;
   --breakpoint-md: 768px;

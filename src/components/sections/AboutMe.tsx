@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Card } from '@/components/ui/card';
 
 const AboutMe = () => {
@@ -45,11 +46,16 @@ const AboutMe = () => {
             </div>
 
             {/* Profile Card */}
-            <Card className="p-8 glass card-shadow hover-lift">
+            <Card className="p-8 glass card-shadow">
               <div className="space-y-4">
-                <div className="w-32 h-32 bg-gradient-primary rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <div className="text-6xl">👨‍💻</div>
-                </div>
+                <Image
+                  src="/images/me.jpg"
+                  alt=""
+                  width={128}
+                  height={128}
+                  className="mx-auto mb-6 object-contain rounded-full"
+                />
+
                 <h3 className="text-2xl font-bold text-center">
                   Risyad Ziyan Arkham
                 </h3>

@@ -52,10 +52,7 @@ const Skills = () => {
           {/* Skill Categories */}
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             {skillCategories.map((category, index) => (
-              <Card
-                key={category.title}
-                className="p-8 glass card-shadow hover-lift"
-              >
+              <Card key={category.title} className="p-8 glass card-shadow ">
                 <h3 className="text-2xl font-bold mb-6 gradient-text">
                   {category.title}
                 </h3>
@@ -64,15 +61,14 @@ const Skills = () => {
                     <div key={skill.name}>
                       <div className="flex justify-between mb-2">
                         <span className="font-medium">{skill.name}</span>
-                        <span className="text-sm text-muted-foreground">
-                          {skill.level}%
+                        <span className="flex">
+                          {Array.from({ length: 5 }).map((_, i) => (
+                            <span key={i}>{i < skill.level ? '⭐' : null}</span>
+                          ))}
                         </span>
                       </div>
-                      <div className="w-full bg-secondary rounded-full h-2">
-                        <div
-                          className="bg-gradient-primary h-2 rounded-full transition-all duration-1000 ease-out"
-                          style={{ width: `${skill.level}%` }}
-                        />
+                      <div className="w-full bg-secondary rounded-full h-1">
+                        {/* <div className="bg-gradient-primary h-2 rounded-full transition-all duration-1000 ease-out" /> */}
                       </div>
                     </div>
                   ))}
@@ -90,7 +86,7 @@ const Skills = () => {
               {technologies.map((tech, index) => (
                 <span
                   key={tech}
-                  className="px-4 py-2 bg-secondary/50 rounded-full text-sm font-medium hover-lift transition-smooth cursor-default"
+                  className="px-4 py-2 bg-secondary/50 rounded-full text-sm font-medium transition-smooth cursor-default"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   {tech}

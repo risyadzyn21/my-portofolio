@@ -2,50 +2,50 @@ import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Github } from 'lucide-react';
 
-const Projects = () => {
-  const projects = [
-    {
-      title: 'E-Commerce Platform',
-      description:
-        'A modern e-commerce platform built with React, TypeScript, and Stripe. Features include product catalog, shopping cart, and secure checkout.',
-      image: '🛍️',
-      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Stripe'],
-      liveLink: '#',
-      githubLink: '#',
-      featured: true,
-    },
-    {
-      title: 'Task Management App',
-      description:
-        'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
-      image: '📋',
-      technologies: ['Next.js', 'Prisma', 'PostgreSQL', 'Framer Motion'],
-      liveLink: '#',
-      githubLink: '#',
-      featured: true,
-    },
-    {
-      title: 'Weather Dashboard',
-      description:
-        'A beautiful weather dashboard with location-based forecasts, interactive maps, and detailed weather analytics.',
-      image: '🌤️',
-      technologies: ['React', 'Chart.js', 'OpenWeather API', 'Tailwind CSS'],
-      liveLink: '#',
-      githubLink: '#',
-      featured: false,
-    },
-    {
-      title: 'Portfolio Website',
-      description:
-        'A responsive portfolio website showcasing modern design principles and smooth animations.',
-      image: '💼',
-      technologies: ['React', 'Framer Motion', 'Tailwind CSS', 'Vercel'],
-      liveLink: '#',
-      githubLink: '#',
-      featured: false,
-    },
-  ];
+const projects = [
+  {
+    title: 'E-Commerce Platform',
+    description:
+      'A modern e-commerce platform built with React, TypeScript, and Stripe. Features include product catalog, shopping cart, and secure checkout.',
+    image: '🛍️',
+    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Stripe'],
+    liveLink: '#',
+    githubLink: '#',
+    featured: true,
+  },
+  {
+    title: 'Task Management App',
+    description:
+      'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
+    image: '📋',
+    technologies: ['Next.js', 'Prisma', 'PostgreSQL', 'Framer Motion'],
+    liveLink: '#',
+    githubLink: '#',
+    featured: true,
+  },
+  {
+    title: 'Weather Dashboard',
+    description:
+      'A beautiful weather dashboard with location-based forecasts, interactive maps, and detailed weather analytics.',
+    image: '🌤️',
+    technologies: ['React', 'Chart.js', 'OpenWeather API', 'Tailwind CSS'],
+    liveLink: '#',
+    githubLink: '#',
+    featured: false,
+  },
+  {
+    title: 'Portfolio Website',
+    description:
+      'A responsive portfolio website showcasing modern design principles and smooth animations.',
+    image: '💼',
+    technologies: ['React', 'Framer Motion', 'Tailwind CSS', 'Vercel'],
+    liveLink: '#',
+    githubLink: '#',
+    featured: false,
+  },
+];
 
+const Projects = () => {
   return (
     <section className="py-20 relative">
       <div className="container mx-auto px-6">
@@ -67,7 +67,7 @@ const Projects = () => {
             {projects.map((project, index) => (
               <Card
                 key={project.title}
-                className={`p-6 glass card-shadow hover-scaleup transition-smooth ${
+                className={`p-6 glass card-shadow transition-smooth ${
                   project.featured ? 'ring-2 ring-primary/30' : ''
                 }`}
               >
@@ -105,7 +105,7 @@ const Projects = () => {
                     <Button
                       variant="outline"
                       size="sm"
-                      className="flex items-center gap-2"
+                      className="flex items-center gap-2 hover-scaleup cursor-pointer"
                     >
                       <ExternalLink className="w-4 h-4" />
                       Live Demo
@@ -113,7 +113,7 @@ const Projects = () => {
                     <Button
                       variant="ghost"
                       size="sm"
-                      className="flex items-center gap-2"
+                      className="flex items-center gap-2 hover-scaleup cursor-pointer"
                     >
                       <Github className="w-4 h-4" />
                       Code
