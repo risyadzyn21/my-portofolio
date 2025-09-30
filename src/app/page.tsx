@@ -1,5 +1,4 @@
-import { AboutSection } from '@/widgets/About';
-import { Hero } from '@/components/sections';
+import { AboutMe, Hero, Projects, Skills } from '@/components/sections';
 
 export default function Home() {
   return (
@@ -10,7 +9,13 @@ export default function Home() {
         <Hero />
       </section>
       <section id="aboutme">
-        <AboutSection />
+        <AboutMe />
+      </section>
+      <section id="skills">
+        <Skills />
+      </section>
+      <section id="projects">
+        <Projects />
       </section>
     </main>
   );

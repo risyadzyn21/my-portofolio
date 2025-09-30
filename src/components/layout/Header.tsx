@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 const menuItems = [
   { name: 'Home', href: '#home' },
   { name: 'About Me', href: '#aboutme' },
+  { name: 'Skills', href: '#skills' },
   { name: 'Projects', href: '#projects' },
   { name: 'Experience', href: '#experience' },
   { name: 'Contact', href: '#contact' },
@@ -45,7 +46,7 @@ const Header: React.FC = () => {
           <div className="text-xl font-bold gradient-text">Risyad's Space</div>
 
           {/* Desktop Navigation */}
-          <nav className="flex gap-4 text-lg">
+          <nav className="hidden md:flex items-center space-x-8">
             {menuItems.map((item) => (
               <Link
                 key={item.name}
@@ -53,6 +54,7 @@ const Header: React.FC = () => {
                 className="text-foreground hover:text-primary transition-colors relative group"
               >
                 {item.name}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
               </Link>
             ))}
           </nav>
