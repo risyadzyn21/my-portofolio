@@ -1,6 +1,7 @@
 import {
   AboutMe,
   Contact,
+  Experience,
   Hero,
   Projects,
   Skills,
@@ -23,9 +24,9 @@ export default function Home() {
       <section id="projects">
         <Projects />
       </section>
-      {/* <section id="experience">
+      <section id="experience">
         <Experience />
-      </section> */}
+      </section>
       <section id="contact">
         <Contact />
       </section>

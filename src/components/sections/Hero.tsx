@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 
@@ -62,8 +63,10 @@ const Hero = () => {
           </div>
 
           {/* Scroll Indicator */}
-          <div className="fade-in-up delay-400">
-            <ArrowDown className="w-6 h-6 mx-auto animate-bounce text-primary" />
+          <div className="flex justify-center fade-in-up delay-400 m-auto">
+            <Link href="#aboutme" className="fade-in-up delay-400">
+              <ArrowDown className="w-6 h-6 mx-auto animate-bounce text-primary" />
+            </Link>
           </div>
         </div>
       </div>

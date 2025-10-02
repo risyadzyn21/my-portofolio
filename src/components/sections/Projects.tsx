@@ -52,7 +52,7 @@ const Projects = () => {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text pb-2">
               Featured Projects
             </h2>
             <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full" />
