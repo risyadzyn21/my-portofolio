@@ -1,3 +1,4 @@
+import { NavigationHeader } from '@/components/layout';
 import {
   AboutMe,
   Contact,
@@ -12,6 +13,7 @@ export default function Home() {
     <main
     // className="grid items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]"
     >
+      <NavigationHeader />
       <section id="home">
         <Hero />
       </section>
@@ -21,11 +23,11 @@ export default function Home() {
       <section id="skills">
         <Skills />
       </section>
-      <section id="projects">
-        <Projects />
-      </section>
       <section id="experience">
         <Experience />
+      </section>
+      <section id="projects">
+        <Projects />
       </section>
       <section id="contact">
         <Contact />

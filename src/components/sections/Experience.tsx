@@ -1,42 +1,9 @@
 import Image from 'next/image';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { Dot } from 'lucide-react';
 
-const experiences = [
-  {
-    title: 'Frontend Developer',
-    company: 'Dattabot',
-    period: 'Jan 2022 - Present',
-    description:
-      'Leading frontend development for enterprise applications using React and TypeScript. Mentoring junior developers and establishing best practices.',
-    technologies: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS'],
-    companyLogo:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl9lNp8EmlvP7Tmp4q9IWa8ZxGe6DZ9WYiJQ&s',
-    type: 'Full-time',
-  },
-  {
-    title: 'Frontend Developer',
-    company: 'Digital Aman Sentosa Indonesia',
-    period: 'Mar 2024 - Oct 2024',
-    description:
-      'Developed responsive web applications and collaborated with design teams to create seamless user experiences.',
-    technologies: ['React', 'JavaScript', 'CSS', 'Git'],
-    companyLogo:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4KrJ6GMwnjw124ypivjgDi1AkvLAmw9ERSg&s',
-    type: 'Freelance',
-  },
-  {
-    title: 'Frontend Developer',
-    company: 'Badan Kepegawaian Negara Republik Indonesia',
-    period: 'Oct 2022 - Dec 2022',
-    description:
-      "Built and maintained web applications, participated in code reviews, and contributed to the company's design system.",
-    technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
-    companyLogo:
-      'https://upload.wikimedia.org/wikipedia/commons/8/8b/Logo_Badan_Kepegawaian_Negara.png',
-    type: 'Freelance',
-  },
-];
+import experienceData from '@/data/experienceData.json';
 
 const Experience = () => {
   return (
@@ -58,7 +25,7 @@ const Experience = () => {
 
             {/* Experience Cards */}
             <div className="space-y-8">
-              {experiences.map((exp, index) => (
+              {experienceData.map((exp, index) => (
                 <div key={index} className="relative">
                   {/* Timeline Dot */}
                   <div className="absolute left-6 top-6 w-5 h-5 rounded-full bg-gradient-primary hidden md:flex items-center justify-center">
@@ -100,9 +67,23 @@ const Experience = () => {
                       </span>
                     </div>
 
-                    <p className="text-muted-foreground leading-relaxed mb-4">
-                      {exp.description}
-                    </p>
+                    <div>
+                      <span className="font-semibold">
+                        Main Responsibilities:
+                      </span>
+                      <ul className="space-y-2">
+                        {exp.responsibility.map((item, i) => (
+                          <li key={item + i} className="flex items-start gap-1">
+                            {/* Bullet */}
+                            <Dot className="mt-0.5" />
+
+                            <p className="flex-1 text-muted-foreground leading-relaxed">
+                              {item}
+                            </p>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
 
                     <div className="flex flex-wrap gap-2">
                       {exp.technologies.map((tech) => (

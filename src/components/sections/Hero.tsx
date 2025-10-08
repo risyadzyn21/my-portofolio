@@ -28,16 +28,21 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 fade-in-up delay-200">
-            <Button size="lg" className="glass hover-scaleup cursor-pointer">
-              View My Work
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="glass hover-scaleup cursor-pointer"
-            >
-              Get In Touch
-            </Button>
+            <Link href="#projects">
+              <Button size="lg" className="glass hover-scaleup cursor-pointer">
+                View My Work
+              </Button>
+            </Link>
+
+            <Link href="#contact">
+              <Button
+                variant="outline"
+                size="lg"
+                className="glass hover-scaleup cursor-pointer"
+              >
+                Get In Touch
+              </Button>
+            </Link>
           </div>
 
           {/* Social Links */}

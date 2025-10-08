@@ -8,12 +8,12 @@ const menuItems = [
   { name: 'Home', href: '#home' },
   { name: 'About Me', href: '#aboutme' },
   { name: 'Skills', href: '#skills' },
-  { name: 'Projects', href: '#projects' },
   { name: 'Experience', href: '#experience' },
+  { name: 'Projects', href: '#projects' },
   { name: 'Contact', href: '#contact' },
 ];
 
-const Header: React.FC = () => {
+const NavigationHeader: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -74,4 +74,4 @@ const Header: React.FC = () => {
   );
 };
 
-export default Header;
+export default NavigationHeader;

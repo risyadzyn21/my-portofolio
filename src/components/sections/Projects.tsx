@@ -2,48 +2,8 @@ import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Github } from 'lucide-react';
 
-const projects = [
-  {
-    title: 'E-Commerce Platform',
-    description:
-      'A modern e-commerce platform built with React, TypeScript, and Stripe. Features include product catalog, shopping cart, and secure checkout.',
-    image: '🛍️',
-    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Stripe'],
-    liveLink: '#',
-    githubLink: '#',
-    featured: true,
-  },
-  {
-    title: 'Task Management App',
-    description:
-      'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
-    image: '📋',
-    technologies: ['Next.js', 'Prisma', 'PostgreSQL', 'Framer Motion'],
-    liveLink: '#',
-    githubLink: '#',
-    featured: true,
-  },
-  {
-    title: 'Weather Dashboard',
-    description:
-      'A beautiful weather dashboard with location-based forecasts, interactive maps, and detailed weather analytics.',
-    image: '🌤️',
-    technologies: ['React', 'Chart.js', 'OpenWeather API', 'Tailwind CSS'],
-    liveLink: '#',
-    githubLink: '#',
-    featured: false,
-  },
-  {
-    title: 'Portfolio Website',
-    description:
-      'A responsive portfolio website showcasing modern design principles and smooth animations.',
-    image: '💼',
-    technologies: ['React', 'Framer Motion', 'Tailwind CSS', 'Vercel'],
-    liveLink: '#',
-    githubLink: '#',
-    featured: false,
-  },
-];
+import projectsData from '@/data/projectsData.json';
+import Link from 'next/link';
 
 const Projects = () => {
   return (
@@ -64,7 +24,7 @@ const Projects = () => {
 
           {/* Projects Grid */}
           <div className="grid md:grid-cols-2 gap-8">
-            {projects.map((project, index) => (
+            {projectsData.slice(0, 4).map((project, index) => (
               <Card
                 key={project.title}
                 className={`p-6 glass card-shadow transition-smooth ${
@@ -126,13 +86,15 @@ const Projects = () => {
 
           {/* View More Button */}
           <div className="text-center mt-12">
-            <Button
-              variant="outline"
-              size="lg"
-              className="glass hover-scaleup cursor-pointer"
-            >
-              View All Projects
-            </Button>
+            <Link href="/projects">
+              <Button
+                variant="outline"
+                size="lg"
+                className="glass hover-scaleup cursor-pointer"
+              >
+                View All Projects
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

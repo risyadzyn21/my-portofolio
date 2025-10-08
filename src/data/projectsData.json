@@ -1,0 +1,114 @@
+[
+    {
+        "title": "Smart Trace",
+        "description": "A modern e-commerce platform built with React, TypeScript, and Stripe. Features include product catalog, shopping cart, and secure checkout.",
+        "image": "🛍️",
+        "technologies": [
+            "React",
+            "TypeScript",
+            "Tailwind CSS",
+            "Stripe"
+        ],
+        "liveLink": "#",
+        "githubLink": "#",
+        "featured": true
+    },
+    {
+        "title": "Block Explorer",
+        "description": "A modern e-commerce platform built with React, TypeScript, and Stripe. Features include product catalog, shopping cart, and secure checkout.",
+        "image": "🛍️",
+        "technologies": [
+            "React",
+            "TypeScript",
+            "Tailwind CSS",
+            "Stripe"
+        ],
+        "liveLink": "#",
+        "githubLink": "#",
+        "featured": true
+    },
+    {
+        "title": "Meta Forest Society",
+        "description": "A modern e-commerce platform built with React, TypeScript, and Stripe. Features include product catalog, shopping cart, and secure checkout.",
+        "image": "🛍️",
+        "technologies": [
+            "React",
+            "TypeScript",
+            "Tailwind CSS",
+            "Stripe"
+        ],
+        "liveLink": "#",
+        "githubLink": "#",
+        "featured": false
+    },
+    {
+        "title": "Mutant Wolf Pack",
+        "description": "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
+        "image": "📋",
+        "technologies": [
+            "Next.js",
+            "Prisma",
+            "PostgreSQL",
+            "Framer Motion"
+        ],
+        "liveLink": "#",
+        "githubLink": "#",
+        "featured": false
+    },
+    {
+        "title": "SI-ASN",
+        "description": "A beautiful weather dashboard with location-based forecasts, interactive maps, and detailed weather analytics.",
+        "image": "🌤️",
+        "technologies": [
+            "React",
+            "Chart.js",
+            "OpenWeather API",
+            "Tailwind CSS"
+        ],
+        "liveLink": "#",
+        "githubLink": "#",
+        "featured": false
+    },
+    {
+        "title": "MAPP V2",
+        "description": "A responsive portfolio website showcasing modern design principles and smooth animations.",
+        "image": "💼",
+        "technologies": [
+            "React",
+            "Framer Motion",
+            "Tailwind CSS",
+            "Vercel"
+        ],
+        "liveLink": "#",
+        "githubLink": "#",
+        "featured": false
+    },
+    {
+        "title": "BBO",
+        "description": "A responsive portfolio website showcasing modern design principles and smooth animations.",
+        "image": "💼",
+        "technologies": [
+            "React",
+            "Framer Motion",
+            "Tailwind CSS",
+            "Vercel"
+        ],
+        "liveLink": "#",
+        "githubLink": "#",
+        "featured": false
+    },
+    {
+        "title": "Kas-E",
+        "description": "A modern e-commerce platform built with React, TypeScript, and Stripe. Features include product catalog, shopping cart, and secure checkout.",
+        "image": "🛍️",
+        "technologies": [
+            "React",
+            "TypeScript",
+            "Tailwind CSS",
+            "Stripe"
+        ],
+        "liveLink": "#",
+        "githubLink": "#",
+        "featured": false
+    }
+]
