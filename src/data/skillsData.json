@@ -1,0 +1,40 @@
+[
+    {
+        "title": "Frontend",
+        "skills": [
+            {
+                "name": "React",
+                "level": 5
+            },
+            {
+                "name": "TypeScript",
+                "level": 4
+            },
+            {
+                "name": "Next.js",
+                "level": 4
+            },
+            {
+                "name": "Vue.js",
+                "level": 3
+            }
+        ]
+    },
+    {
+        "title": "Tools & Others",
+        "skills": [
+            {
+                "name": "Git",
+                "level": 5
+            },
+            {
+                "name": "Figma",
+                "level": 3
+            },
+            {
+                "name": "Web.js",
+                "level": 3
+            }
+        ]
+    }
+]

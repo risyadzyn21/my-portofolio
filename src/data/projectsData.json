@@ -28,7 +28,7 @@
         "featured": true
     },
     {
-        "title": "Meta Forest Society",
+        "title": "Portfolio Website",
         "description": "A modern e-commerce platform built with React, TypeScript, and Stripe. Features include product catalog, shopping cart, and secure checkout.",
         "image": "🛍️",
         "technologies": [
@@ -36,20 +36,6 @@
             "TypeScript",
             "Tailwind CSS",
             "Stripe"
-        ],
-        "liveLink": "#",
-        "githubLink": "#",
-        "featured": false
-    },
-    {
-        "title": "Mutant Wolf Pack",
-        "description": "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-        "image": "📋",
-        "technologies": [
-            "Next.js",
-            "Prisma",
-            "PostgreSQL",
-            "Framer Motion"
         ],
         "liveLink": "#",
         "githubLink": "#",
@@ -92,6 +78,48 @@
             "Framer Motion",
             "Tailwind CSS",
             "Vercel"
+        ],
+        "liveLink": "#",
+        "githubLink": "#",
+        "featured": false
+    },
+    {
+        "title": "Purposeful People NFT Mint",
+        "description": "A modern e-commerce platform built with React, TypeScript, and Stripe. Features include product catalog, shopping cart, and secure checkout.",
+        "image": "🛍️",
+        "technologies": [
+            "React",
+            "TypeScript",
+            "Tailwind CSS",
+            "Stripe"
+        ],
+        "liveLink": "#",
+        "githubLink": "#",
+        "featured": false
+    },
+    {
+        "title": "Meta Forest Society",
+        "description": "A modern e-commerce platform built with React, TypeScript, and Stripe. Features include product catalog, shopping cart, and secure checkout.",
+        "image": "🛍️",
+        "technologies": [
+            "React",
+            "TypeScript",
+            "Tailwind CSS",
+            "Stripe"
+        ],
+        "liveLink": "#",
+        "githubLink": "#",
+        "featured": false
+    },
+    {
+        "title": "Mutant Wolf Pack",
+        "description": "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
+        "image": "📋",
+        "technologies": [
+            "Next.js",
+            "Prisma",
+            "PostgreSQL",
+            "Framer Motion"
         ],
         "liveLink": "#",
         "githubLink": "#",
