@@ -1,10 +1,50 @@
+'use client';
+
+import { useState } from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
 
+const WEB3FORMS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY!;
+const WEB3FORMS_ENDPOINT = process.env.NEXT_PUBLIC_WEB3FORMS_ENDPOINT!;
+
 const Contact = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [status, setStatus] = useState<'success' | 'error' | null>(null);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget; // ✅ store the reference right away
+    setIsSubmitting(true);
+    setStatus(null);
+
+    const formData = new FormData(form);
+    formData.append('access_key', WEB3FORMS_KEY);
+
+    try {
+      const response = await fetch(WEB3FORMS_ENDPOINT, {
+        method: 'POST',
+        body: formData,
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setStatus('success');
+        form.reset(); // ✅ safe to call now
+      } else {
+        setStatus('error');
+      }
+    } catch (error) {
+      console.error('Form submission failed:', error);
+      setStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section className="py-20 relative">
       <div className="container mx-auto px-6">
@@ -25,43 +65,91 @@ const Contact = () => {
             {/* Contact Form */}
             <Card className="p-8 glass card-shadow">
               <h3 className="text-2xl font-bold mb-6">Send me a message</h3>
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm font-medium mb-2">
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-medium mb-2"
+                    >
                       Name
                     </label>
-                    <Input placeholder="Your name" className="glass" />
+                    <Input
+                      id="name"
+                      name="name"
+                      placeholder="Your name"
+                      className="glass"
+                      required
+                    />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium mb-2">
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium mb-2"
+                    >
                       Email
                     </label>
                     <Input
+                      id="email"
+                      name="email"
                       type="email"
                       placeholder="your@email.com"
                       className="glass"
+                      required
                     />
                   </div>
                 </div>
+
                 <div>
-                  <label className="block text-sm font-medium mb-2">
+                  <label
+                    htmlFor="subject"
+                    className="block text-sm font-medium mb-2"
+                  >
                     Subject
                   </label>
-                  <Input placeholder="Project inquiry" className="glass" />
+                  <Input
+                    id="subject"
+                    name="subject"
+                    placeholder="Project inquiry"
+                    className="glass"
+                    required
+                  />
                 </div>
+
                 <div>
-                  <label className="block text-sm font-medium mb-2">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium mb-2"
+                  >
                     Message
                   </label>
                   <Textarea
+                    id="message"
+                    name="message"
                     placeholder="Tell me about your project..."
                     className="glass min-h-[120px]"
+                    required
                   />
                 </div>
-                <Button className="w-full glass hover-scaleup glow cursor-pointer">
-                  Send Message
+
+                <Button
+                  type="submit"
+                  className="w-full glass hover-scaleup glow cursor-pointer"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
                 </Button>
+
+                {status === 'success' && (
+                  <p className="text-green-500 text-sm text-center">
+                    ✅ Message sent successfully!
+                  </p>
+                )}
+                {status === 'error' && (
+                  <p className="text-red-500 text-sm text-center">
+                    ❌ Failed to send message. Please try again.
+                  </p>
+                )}
               </form>
             </Card>
 

@@ -30,7 +30,7 @@
     {
         "title": "Portfolio Website",
         "description": "A modern e-commerce platform built with React, TypeScript, and Stripe. Features include product catalog, shopping cart, and secure checkout.",
-        "image": "🛍️",
+        "image": "💼",
         "technologies": [
             "React",
             "TypeScript",
@@ -136,7 +136,7 @@
             "Stripe"
         ],
         "liveLink": "#",
-        "githubLink": "#",
+        "githubLink": "https://gitlab.com/binarxglints_batch14/finalproject/kas-e/frontendkas-e/-/tree/development?ref_type=heads",
         "featured": false
     }
 ]
