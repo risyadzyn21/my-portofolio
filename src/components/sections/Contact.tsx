@@ -16,7 +16,7 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const form = e.currentTarget; // ✅ store the reference right away
+    const form = e.currentTarget;
     setIsSubmitting(true);
     setStatus(null);
 
@@ -33,7 +33,7 @@ const Contact = () => {
 
       if (result.success) {
         setStatus('success');
-        form.reset(); // ✅ safe to call now
+        form.reset();
       } else {
         setStatus('error');
       }
