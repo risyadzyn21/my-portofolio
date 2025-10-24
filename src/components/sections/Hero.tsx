@@ -14,7 +14,9 @@ const Hero = () => {
         <div className="text-center max-w-4xl mx-auto">
           {/* Main Heading */}
           <div className="fade-in-up">
-            <h1 className="text-6xl md:text-8xl font-bold mb-6">Hi, I'm</h1>
+            <h1 className="text-6xl md:text-8xl font-bold mb-6">
+              Hi, I&apos;m
+            </h1>
             <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-34 gradient-text">
               Risyad
             </h1>
@@ -48,19 +50,21 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex justify-center gap-6 mb-16 fade-in-up delay-300">
             <a
-              href="#"
+              href="https://github.com/risyadzyn21"
+              target="_blank"
               className="p-3 glass rounded-full hover-scaleup transition-smooth"
             >
               <Github className="w-6 h-6" />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/risyad-ziyan-arkham/"
+              target="_blank"
               className="p-3 glass rounded-full hover-scaleup transition-smooth"
             >
               <Linkedin className="w-6 h-6" />
             </a>
             <a
-              href="#"
+              href="#contact"
               className="p-3 glass rounded-full hover-scaleup transition-smooth"
             >
               <Mail className="w-6 h-6" />

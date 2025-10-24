@@ -15,7 +15,7 @@ const menuItems = [
 
 const NavigationHeader: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  // const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,7 +31,7 @@ const NavigationHeader: React.FC = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-    setIsMobileMenuOpen(false);
+    // setIsMobileMenuOpen(false);
   };
 
   return (
@@ -43,7 +43,9 @@ const NavigationHeader: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Name */}
-          <div className="text-xl font-bold gradient-text">Risyad's Space</div>
+          <div className="text-xl font-bold gradient-text">
+            Risyad&apos;s Space
+          </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
