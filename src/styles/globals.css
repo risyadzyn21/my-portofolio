@@ -167,6 +167,7 @@ html {
 }
 
 @theme inline {
+  --color-placeholder: 215 16% 60%;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -209,6 +210,12 @@ html {
 @layer base {
   * {
     @apply border-border;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: hsl(var(--color-placeholder)) !important;
+    opacity: 1; /* ensure visible */
   }
 
   body {
