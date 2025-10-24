@@ -126,7 +126,7 @@ const Contact = () => {
                   <Textarea
                     id="message"
                     name="message"
-                    placeholder="Tell me what you'd like to work on — or how I can help you."
+                    placeholder={`Tell me what you'd like to work on — or how I can help you.`}
                     className="glass min-h-[120px]"
                     required
                   />
