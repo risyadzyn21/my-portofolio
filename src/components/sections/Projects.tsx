@@ -24,7 +24,7 @@ const Projects = () => {
 
           {/* Projects Grid */}
           <div className="grid md:grid-cols-2 gap-8">
-            {projectsData.slice(0, 4).map((project, index) => (
+            {projectsData.slice(0, 4).map((project) => (
               <Card
                 key={project.title}
                 className={`p-6 glass card-shadow transition-smooth ${

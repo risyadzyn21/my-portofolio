@@ -22,7 +22,7 @@ export default function Projects() {
 
           {/* Projects Grid */}
           <div className="grid md:grid-cols-3 gap-8">
-            {projectsData.map((project, index) => (
+            {projectsData.map((project) => (
               <Card
                 key={project.title}
                 className={`p-6 glass card-shadow transition-smooth ${

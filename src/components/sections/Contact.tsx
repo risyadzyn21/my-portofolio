@@ -5,7 +5,7 @@ import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 const WEB3FORMS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY!;
 const WEB3FORMS_ENDPOINT = process.env.NEXT_PUBLIC_WEB3FORMS_ENDPOINT!;
@@ -52,12 +52,12 @@ const Contact = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text pb-2">
-              Let's Work Together
+              Let&apos;s Work Together
             </h2>
             <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full" />
             <p className="text-lg text-muted-foreground mt-6 max-w-2xl mx-auto">
-              Have a project in mind? I'd love to hear from you. Let's discuss
-              how we can bring your ideas to life.
+              Have a project in mind? I&apos;d love to hear from you. Let&apos;s
+              discuss how we can bring your ideas to life.
             </p>
           </div>
 
@@ -126,7 +126,7 @@ const Contact = () => {
                   <Textarea
                     id="message"
                     name="message"
-                    placeholder="Tell me what you’d like to work on — or how I can help you."
+                    placeholder="Tell me what you'd like to work on — or how I can help you."
                     className="glass min-h-[120px]"
                     required
                   />
