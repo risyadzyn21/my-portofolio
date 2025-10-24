@@ -18,14 +18,14 @@ const AboutMe = () => {
             {/* Text Content */}
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I&apos;m a passionate frontend developer with over 3 years of
+                I'm a passionate frontend developer with over 3 years of
                 experience creating exceptional digital experiences. I
                 specialize in React, TypeScript, and modern web technologies.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                When I&apos;m not coding, you&apos;ll find me exploring new
-                technologies, contributing to open-source projects, or sharing
-                my knowledge with the developer community.
+                When I'm not coding, you'll find me exploring new technologies,
+                contributing to open-source projects, or sharing my knowledge
+                with the developer community.
               </p>
 
               {/* Stats */}

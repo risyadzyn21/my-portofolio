@@ -52,12 +52,12 @@ const Contact = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text pb-2">
-              Let&apos;s Work Together
+              Let's Work Together
             </h2>
             <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full" />
             <p className="text-lg text-muted-foreground mt-6 max-w-2xl mx-auto">
-              Have a project in mind? I&apos;d love to hear from you. Let&apos;s
-              discuss how we can bring your ideas to life.
+              Have a project in mind? I'd love to hear from you. Let's discuss
+              how we can bring your ideas to life.
             </p>
           </div>
 
