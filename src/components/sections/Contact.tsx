@@ -110,7 +110,7 @@ const Contact = () => {
                   <Input
                     id="subject"
                     name="subject"
-                    placeholder="Project inquiry"
+                    placeholder="e.g. Job offer, project inquiry, or collaboration"
                     className="glass"
                     required
                   />
@@ -126,7 +126,7 @@ const Contact = () => {
                   <Textarea
                     id="message"
                     name="message"
-                    placeholder="Tell me about your project..."
+                    placeholder="Tell me what you’d like to work on — or how I can help you."
                     className="glass min-h-[120px]"
                     required
                   />
@@ -210,9 +210,11 @@ const Contact = () => {
                   Let's discuss your ideas and create something amazing
                   together.
                 </p>
-                <Button variant="secondary" className="w-full cursor-pointer">
-                  Schedule a Call
-                </Button>
+                <a href="https://calendly.com/risyadzyn/30min" target="_blank">
+                  <Button variant="secondary" className="w-full cursor-pointer">
+                    Schedule a Call
+                  </Button>
+                </a>
               </Card>
             </div>
           </div>
