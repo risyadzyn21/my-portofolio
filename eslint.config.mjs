@@ -23,6 +23,7 @@ const eslintConfig = [
     },
     rules: {
       'prettier/prettier': 'error', // show Prettier issues as ESLint errors
+      'react/no-unescaped-entities': 'off',
     },
   },
 ];
