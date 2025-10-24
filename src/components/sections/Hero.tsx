@@ -4,7 +4,7 @@ import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="min-h-dvh flex items-center justify-center relative overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-accent/20" />
       <div className="absolute top-20 left-20 w-72 h-72 bg-primary/10 rounded-full filter blur-3xl animate-pulse" />
