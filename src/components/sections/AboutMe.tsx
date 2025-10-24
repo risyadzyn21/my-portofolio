@@ -23,9 +23,9 @@ const AboutMe = () => {
                 specialize in React, TypeScript, and modern web technologies.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm passionate about exploring emerging technologies and
-                continuously enhancing my coding skills to create innovative and
-                efficient solutions.
+                I enjoy exploring new technologies, experimenting with fresh
+                ideas, and continuously improving my skills to build better,
+                smarter web experiences.
               </p>
 
               {/* Stats */}
