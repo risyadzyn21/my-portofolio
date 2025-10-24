@@ -17,7 +17,7 @@ const Skills = () => {
 
           {/* Skill Categories */}
           <div className="grid md:grid-cols-2 gap-8 mb-16">
-            {skillsData.map((category, index) => {
+            {skillsData.map((category) => {
               const sortedSkills = [...category.skills].sort(
                 (a, b) => b.level - a.level,
               );
