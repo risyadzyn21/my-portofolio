@@ -1,0 +1,69 @@
+[
+    {
+        "title": "Frontend Developer",
+        "company": "Dattabot",
+        "period": "Jan 2022 - Present",
+        "description": "Leading frontend development for enterprise applications using React and TypeScript. Mentoring junior developers and establishing best practices.",
+        "technologies": [
+            "React",
+            "TypeScript",
+            "Next.js",
+            "Tailwind CSS"
+        ],
+        "responsibility": [
+            "Develop reusable component for the website.",
+            "Develop graphs for data visualization.",
+            "Develop UI based on designs that have been made by the UI/UX team.",
+            "Develop blockchain related website.",
+            "Integrate between UI and database via API.",
+            "Make a website that can do transactions between user and crypto wallet (Metamask Wallet).",
+            "Make a website for public and internal purpose.",
+            "Implement unit tests.",
+            "Make a responsive website."
+        ],
+        "companyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl9lNp8EmlvP7Tmp4q9IWa8ZxGe6DZ9WYiJQ&s",
+        "type": "Full-time"
+    },
+    {
+        "title": "Frontend Developer",
+        "company": "Digital Aman Sentosa Indonesia",
+        "period": "Mar 2024 - Oct 2024",
+        "description": "Developed responsive web applications and collaborated with design teams to create seamless user experiences.",
+        "technologies": [
+            "React",
+            "JavaScript",
+            "CSS",
+            "Git"
+        ],
+        "responsibility": [
+            "Develop multiple website applications for our client PT Perusahaan Listrik Negara (Persero).",
+            "Develop components for page requirements such as form, tab, table, dropdown, etc.",
+            "Assemble pages with reusable components based on page requirement services.",
+            "Integration with backend via API.",
+            "Bug fixing."
+        ],
+        "companyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4KrJ6GMwnjw124ypivjgDi1AkvLAmw9ERSg&s",
+        "type": "Freelance"
+    },
+    {
+        "title": "Frontend Developer",
+        "company": "Badan Kepegawaian Negara Republik Indonesia",
+        "period": "Oct 2022 - Dec 2022",
+        "description": "Built and maintained web applications, participated in code reviews, and contributed to the company's design system.",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React"
+        ],
+        "responsibility": [
+            "Develop Web App System called Sistem Informasi Aparatur Sipil Negara (SIASN).",
+            "Develop a feature based on requirements.",
+            "Handle features in promotion service, mutation service, and refreshment service.",
+            "Integration with backend via API.",
+            "Bug fixing."
+        ],
+        "companyLogo": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Logo_Badan_Kepegawaian_Negara.png",
+        "type": "Freelance"
+    }
+]
