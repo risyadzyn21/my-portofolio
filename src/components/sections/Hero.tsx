@@ -4,18 +4,18 @@ import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section className="min-h-dvh flex items-center justify-center relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-accent/20" />
       <div className="absolute top-20 left-20 w-72 h-72 bg-primary/10 rounded-full filter blur-3xl animate-pulse" />
       <div className="absolute bottom-20 right-20 w-96 h-96 bg-accent/10 rounded-full filter blur-3xl animate-pulse delay-1000" />
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-6 pt-24 xl:pt-0 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
           {/* Main Heading */}
           <div className="fade-in-up">
             <h1 className="text-6xl md:text-8xl font-bold mb-6">Hi, I'm</h1>
-            <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-34 gradient-text">
+            <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-20 xl:leading-34 gradient-text">
               Risyad
             </h1>
           </div>
