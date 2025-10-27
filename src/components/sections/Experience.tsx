@@ -21,12 +21,12 @@ const Experience = () => {
           {/* Timeline */}
           <div className="relative">
             {/* Timeline Line */}
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-border hidden md:block" />
+            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gray-200 hidden md:block" />
 
             {/* Experience Cards */}
             <div className="space-y-8">
-              {experienceData.map((exp, index) => (
-                <div key={index} className="relative">
+              {experienceData.map((exp) => (
+                <div key={exp.id} className="relative">
                   {/* Timeline Dot */}
                   <div className="absolute left-6 top-6 w-5 h-5 rounded-full bg-gradient-primary hidden md:flex items-center justify-center">
                     <div className="w-2 h-2 bg-background rounded-full" />

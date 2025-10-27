@@ -1,10 +1,16 @@
 [
   {
+    "id": 1,
     "title": "Frontend Developer",
     "company": "Dattabot",
     "period": "Jan 2022 - Present",
     "description": "Leading frontend development for enterprise applications using React and TypeScript. Mentoring junior developers and establishing best practices.",
-    "technologies": ["React", "TypeScript", "Next.js", "Tailwind CSS"],
+    "technologies": [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "Tailwind CSS"
+    ],
     "responsibility": [
       "Develop reusable component for the website.",
       "Develop graphs for data visualization.",
@@ -20,11 +26,17 @@
     "type": "Full-time"
   },
   {
+    "id": 2,
     "title": "Frontend Developer",
     "company": "Digital Aman Sentosa Indonesia",
     "period": "Mar 2024 - Oct 2024",
     "description": "Developed responsive web applications and collaborated with design teams to create seamless user experiences.",
-    "technologies": ["React", "JavaScript", "CSS", "Git"],
+    "technologies": [
+      "React",
+      "JavaScript",
+      "CSS",
+      "Git"
+    ],
     "responsibility": [
       "Develop multiple website applications for our client PT Perusahaan Listrik Negara (Persero).",
       "Develop components for page requirements such as form, tab, table, dropdown, etc.",
@@ -36,11 +48,17 @@
     "type": "Freelance"
   },
   {
+    "id": 3,
     "title": "Frontend Developer",
     "company": "Badan Kepegawaian Negara Republik Indonesia",
     "period": "Oct 2022 - Dec 2022",
     "description": "Built and maintained web applications, participated in code reviews, and contributed to the company's design system.",
-    "technologies": ["HTML", "CSS", "JavaScript", "React"],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React"
+    ],
     "responsibility": [
       "Develop Web App System called Sistem Informasi Aparatur Sipil Negara (SIASN).",
       "Develop a feature based on requirements.",

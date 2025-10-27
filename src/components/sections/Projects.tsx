@@ -13,7 +13,7 @@ const Projects = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text pb-2">
-              Featured Projects
+              What I’ve Been Working On
             </h2>
             <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full" />
             <p className="text-lg text-muted-foreground mt-6 max-w-2xl mx-auto">
@@ -28,7 +28,7 @@ const Projects = () => {
               <Card
                 key={project.title}
                 className={`p-6 glass card-shadow transition-smooth ${
-                  project.featured ? 'ring-2 ring-primary/30' : ''
+                  project.isPrivate ? 'ring-2 ring-primary/30' : ''
                 }`}
               >
                 {/* Project Image/Icon */}
@@ -36,9 +36,9 @@ const Projects = () => {
                   <div className="w-full h-48 bg-gradient-secondary rounded-lg flex items-center justify-center text-6xl mb-4">
                     {project.image}
                   </div>
-                  {project.featured && (
+                  {project.isPrivate && (
                     <span className="inline-block px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">
-                      Featured
+                      Private Use
                     </span>
                   )}
                 </div>
@@ -62,22 +62,39 @@ const Projects = () => {
 
                   {/* Action Buttons */}
                   <div className="flex gap-3 pt-4">
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      className="flex items-center gap-2 hover-scaleup cursor-pointer"
-                    >
-                      <ExternalLink className="w-4 h-4" />
-                      Live Demo
-                    </Button>
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      className="flex items-center gap-2 hover-scaleup cursor-pointer"
-                    >
-                      <Github className="w-4 h-4" />
-                      Code
-                    </Button>
+                    {project.liveLink && (
+                      <a
+                        href={project.liveLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          className="flex items-center gap-2 hover-scaleup cursor-pointer"
+                        >
+                          <ExternalLink className="w-4 h-4" />
+                          Live Demo
+                        </Button>
+                      </a>
+                    )}
+
+                    {project.repoLink && (
+                      <a
+                        href={project.repoLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          className="flex items-center gap-2 hover-scaleup cursor-pointer"
+                        >
+                          <Github className="w-4 h-4" />
+                          Code
+                        </Button>
+                      </a>
+                    )}
                   </div>
                 </div>
               </Card>
