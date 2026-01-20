@@ -3,7 +3,7 @@ import '@/styles/globals.css';
 import { SimpleHeader } from '@/components/layout';
 
 export const metadata = {
-  title: 'My Portfolio',
+  title: 'Risyad.dev — My Portfolio',
 };
 
 export default function ProjectsLayout({
