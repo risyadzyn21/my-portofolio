@@ -2,7 +2,7 @@
   {
     "title": "Smart Trace",
     "description": "A modern e-commerce platform built with React, TypeScript, and Stripe. Features include product catalog, shopping cart, and secure checkout.",
-    "image": "🛍️",
+    "image": "",
     "technologies": [
       "React",
       "TypeScript",
@@ -16,7 +16,7 @@
   {
     "title": "Block Explorer",
     "description": "A modern e-commerce platform built with React, TypeScript, and Stripe. Features include product catalog, shopping cart, and secure checkout.",
-    "image": "🛍️",
+    "image": "",
     "technologies": [
       "React",
       "TypeScript",
@@ -30,7 +30,7 @@
   {
     "title": "Risyad's Space (Portfolio Website)",
     "description": "A modern e-commerce platform built with React, TypeScript, and Stripe. Features include product catalog, shopping cart, and secure checkout.",
-    "image": "💼",
+    "image": "",
     "technologies": [
       "Next.js",
       "TypeScript",
@@ -43,7 +43,7 @@
   {
     "title": "SI-ASN (Old Version)",
     "description": "A beautiful weather dashboard with location-based forecasts, interactive maps, and detailed weather analytics.",
-    "image": "🌤️",
+    "image": "",
     "technologies": [
       "React",
       "Chart.js",
@@ -57,7 +57,7 @@
   {
     "title": "MAPP V2",
     "description": "A responsive portfolio website showcasing modern design principles and smooth animations.",
-    "image": "💼",
+    "image": "",
     "technologies": [
       "React",
       "Framer Motion",
@@ -71,7 +71,7 @@
   {
     "title": "BBO",
     "description": "A responsive portfolio website showcasing modern design principles and smooth animations.",
-    "image": "💼",
+    "image": "",
     "technologies": [
       "React",
       "Framer Motion",
@@ -85,7 +85,7 @@
   {
     "title": "Purposeful People NFT Mint",
     "description": "A modern e-commerce platform built with React, TypeScript, and Stripe. Features include product catalog, shopping cart, and secure checkout.",
-    "image": "🛍️",
+    "image": "",
     "technologies": [
       "React",
       "TypeScript",
@@ -99,7 +99,7 @@
   {
     "title": "Meta Forest Society",
     "description": "A modern e-commerce platform built with React, TypeScript, and Stripe. Features include product catalog, shopping cart, and secure checkout.",
-    "image": "🛍️",
+    "image": "",
     "technologies": [
       "React",
       "TypeScript",
@@ -113,7 +113,7 @@
   {
     "title": "Mutant Wolf Pack",
     "description": "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-    "image": "📋",
+    "image": "",
     "technologies": [
       "Next.js",
       "Prisma",
@@ -127,7 +127,7 @@
   {
     "title": "Kas-E",
     "description": "A modern e-commerce platform built with React, TypeScript, and Stripe. Features include product catalog, shopping cart, and secure checkout.",
-    "image": "🛍️",
+    "image": "",
     "technologies": [
       "React",
       "TypeScript",

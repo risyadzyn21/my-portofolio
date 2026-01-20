@@ -34,7 +34,7 @@ const Projects = () => {
                 {/* Project Image/Icon */}
                 <div className="mb-6">
                   <div className="w-full h-48 bg-gradient-secondary rounded-lg flex items-center justify-center text-6xl mb-4">
-                    {project.image}
+                    {project.image ? project.image : '💼'}
                   </div>
                   {project.isPrivate && (
                     <span className="inline-block px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">
