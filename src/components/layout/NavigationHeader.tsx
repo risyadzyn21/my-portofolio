@@ -51,7 +51,7 @@ const NavigationHeader: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Name */}
-          <div className="text-xl font-bold gradient-text">Risyad's Space</div>
+          <div className="text-xl font-bold gradient-text">Risyad.dev</div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
