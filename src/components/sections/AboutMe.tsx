@@ -37,7 +37,7 @@ const AboutMe = () => {
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold gradient-text">3+</div>
+                  <div className="text-3xl font-bold gradient-text">4+</div>
                   <div className="text-sm text-muted-foreground">
                     Years Experience
                   </div>
@@ -53,7 +53,7 @@ const AboutMe = () => {
                   alt=""
                   width={128}
                   height={128}
-                  className="mx-auto mb-6 object-contain rounded-full"
+                  className="w-[128px] h-[128px] mx-auto mb-6 object-cover rounded-full"
                 />
 
                 <h3 className="text-2xl font-bold text-center">
@@ -69,7 +69,7 @@ const AboutMe = () => {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Experience:</span>
-                    <span>3+ Years</span>
+                    <span>4+ Years</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Specialty:</span>
