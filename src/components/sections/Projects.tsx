@@ -4,6 +4,7 @@ import { ExternalLink, Github } from 'lucide-react';
 
 import projectsData from '@/data/projectsData.json';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Projects = () => {
   return (
@@ -33,9 +34,20 @@ const Projects = () => {
               >
                 {/* Project Image/Icon */}
                 <div className="mb-6">
-                  <div className="w-full h-48 bg-gradient-secondary rounded-lg flex items-center justify-center text-6xl mb-4">
-                    {project.image ? project.image : '💼'}
+                  <div className="w-full aspect-video bg-gradient-secondary rounded-lg flex items-center justify-center text-6xl mb-4 relative overflow-hidden">
+                    {project.images ? (
+                      <Image
+                        src={project.images[0]}
+                        alt={project.title}
+                        fill
+                        className="object-cover rounded-lg"
+                        sizes="100%"
+                      />
+                    ) : (
+                      '💼'
+                    )}
                   </div>
+
                   {project.isPrivate && (
                     <span className="inline-block px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">
                       Private Use

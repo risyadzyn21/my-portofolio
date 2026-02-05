@@ -1,36 +1,27 @@
 [
   {
-    "title": "Smart Trace",
-    "description": "A modern e-commerce platform built with React, TypeScript, and Stripe. Features include product catalog, shopping cart, and secure checkout.",
-    "image": "",
+    "title": "Zyn Assistant",
+    "description": "A modern chat application built with Vue 3 and Gemini API, featuring real-time messaging, composable architecture, and a scalable front-end structure.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/risyadzyn21/portfolio-assets@ed507c4f83f38b6af0bd29a970470c7d33549297/images/zyn-assistant.png"
+    ],
     "technologies": [
-      "React",
+      "Vue 3",
       "TypeScript",
       "Tailwind CSS",
-      "Stripe"
+      "Gemini API"
     ],
-    "liveLink": "",
-    "repoLink": "",
-    "isPrivate": true
+    "liveLink": "https://zyn-assistant.vercel.app/",
+    "repoLink": "https://github.com/risyadzyn21/zyn-assistant",
+    "isPrivate": false,
+    "isPersonaProject": true
   },
   {
-    "title": "Block Explorer",
-    "description": "A modern e-commerce platform built with React, TypeScript, and Stripe. Features include product catalog, shopping cart, and secure checkout.",
-    "image": "",
-    "technologies": [
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Stripe"
+    "title": "Risyad.dev (Portfolio Website)",
+    "description": "A collection of real-world projects and technical explorations showcasing my journey as a software engineer. I focus on building practical, maintainable applications while continuously learning and experimenting with modern technologies.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/risyadzyn21/portfolio-assets@294a69661639181ee19e831855b9fc4a3261c958/images/risyad-dev.png"
     ],
-    "liveLink": "",
-    "repoLink": "",
-    "isPrivate": true
-  },
-  {
-    "title": "Risyad's Space (Portfolio Website)",
-    "description": "A modern e-commerce platform built with React, TypeScript, and Stripe. Features include product catalog, shopping cart, and secure checkout.",
-    "image": "",
     "technologies": [
       "Next.js",
       "TypeScript",
@@ -38,12 +29,42 @@
     ],
     "liveLink": "https://risyad-dev.vercel.app",
     "repoLink": "https://github.com/risyadzyn21/my-portofolio",
-    "isPrivate": false
+    "isPrivate": false,
+    "isPersonaProject": true
+  },
+  {
+    "title": "Smart Trace",
+    "description": "A modern e-commerce platform built with React, TypeScript, and Stripe. Features include product catalog, shopping cart, and secure checkout.",
+    "images": "",
+    "technologies": [
+      "React",
+      "JavaScript",
+      "Sass",
+      "Redux",
+      "AntV G6"
+    ],
+    "liveLink": "",
+    "repoLink": "",
+    "isPrivate": true,
+    "isPersonaProject": false
+  },
+  {
+    "title": "Block Explorer",
+    "description": "A modern e-commerce platform built with React, TypeScript, and Stripe. Features include product catalog, shopping cart, and secure checkout.",
+    "images": "",
+    "technologies": [
+      "React",
+      "JavaScript"
+    ],
+    "liveLink": "",
+    "repoLink": "",
+    "isPrivate": true,
+    "isPersonaProject": false
   },
   {
     "title": "SI-ASN (Old Version)",
     "description": "A beautiful weather dashboard with location-based forecasts, interactive maps, and detailed weather analytics.",
-    "image": "",
+    "images": "",
     "technologies": [
       "React",
       "Chart.js",
@@ -52,12 +73,13 @@
     ],
     "liveLink": "",
     "repoLink": "",
-    "isPrivate": false
+    "isPrivate": false,
+    "isPersonaProject": false
   },
   {
     "title": "MAPP V2",
     "description": "A responsive portfolio website showcasing modern design principles and smooth animations.",
-    "image": "",
+    "images": "",
     "technologies": [
       "React",
       "Framer Motion",
@@ -66,7 +88,8 @@
     ],
     "liveLink": "",
     "repoLink": "",
-    "isPrivate": false
+    "isPrivate": false,
+    "isPersonaProject": false
   },
   {
     "title": "BBO",
@@ -80,7 +103,8 @@
     ],
     "liveLink": "",
     "repoLink": "",
-    "isPrivate": false
+    "isPrivate": false,
+    "isPersonaProject": false
   },
   {
     "title": "Purposeful People NFT Mint",
@@ -89,12 +113,12 @@
     "technologies": [
       "React",
       "TypeScript",
-      "Tailwind CSS",
-      "Stripe"
+      "Tailwind CSS"
     ],
     "liveLink": "",
     "repoLink": "",
-    "isPrivate": false
+    "isPrivate": false,
+    "isPersonaProject": false
   },
   {
     "title": "Meta Forest Society",
@@ -103,12 +127,12 @@
     "technologies": [
       "React",
       "TypeScript",
-      "Tailwind CSS",
-      "Stripe"
+      "Tailwind CSS"
     ],
     "liveLink": "",
     "repoLink": "",
-    "isPrivate": false
+    "isPrivate": false,
+    "isPersonaProject": false
   },
   {
     "title": "Mutant Wolf Pack",
@@ -122,7 +146,8 @@
     ],
     "liveLink": "",
     "repoLink": "",
-    "isPrivate": false
+    "isPrivate": false,
+    "isPersonaProject": false
   },
   {
     "title": "Kas-E",
@@ -131,11 +156,11 @@
     "technologies": [
       "React",
       "TypeScript",
-      "Tailwind CSS",
-      "Stripe"
+      "Tailwind CSS"
     ],
     "liveLink": "",
     "repoLink": "https://gitlab.com/binarxglints_batch14/finalproject/kas-e/frontendkas-e/-/tree/development?ref_type=heads",
-    "isPrivate": false
+    "isPrivate": false,
+    "isPersonaProject": false
   }
 ]
