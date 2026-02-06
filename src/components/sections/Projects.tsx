@@ -1,6 +1,15 @@
+'use client';
+
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Github } from 'lucide-react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
 
 import projectsData from '@/data/projectsData.json';
 import Link from 'next/link';
@@ -34,17 +43,36 @@ const Projects = () => {
               >
                 {/* Project Image/Icon */}
                 <div className="mb-6">
-                  <div className="w-full aspect-video bg-gradient-secondary rounded-lg flex items-center justify-center text-6xl mb-4 relative overflow-hidden">
-                    {project.images ? (
-                      <Image
-                        src={project.images[0]}
-                        alt={project.title}
-                        fill
-                        className="object-cover rounded-lg"
-                        sizes="100%"
-                      />
+                  <div className="w-full bg-gradient-secondary rounded-lg mb-4 overflow-hidden">
+                    {project.images && project.images.length > 0 ? (
+                      <Carousel className="w-full" opts={{ loop: true }}>
+                        <CarouselContent>
+                          {project.images.map((img) => (
+                            <CarouselItem key={img}>
+                              <div className="relative w-full aspect-video">
+                                <Image
+                                  src={img}
+                                  alt={project.title}
+                                  width={1920}
+                                  height={1080}
+                                  className="w-full h-full object-cover"
+                                  sizes="100%"
+                                />
+                              </div>
+                            </CarouselItem>
+                          ))}
+                        </CarouselContent>
+                        {project.images.length > 1 && (
+                          <>
+                            <CarouselPrevious className="left-2" />
+                            <CarouselNext className="right-2" />
+                          </>
+                        )}
+                      </Carousel>
                     ) : (
-                      '💼'
+                      <div className="aspect-video flex items-center justify-center text-6xl">
+                        💼
+                      </div>
                     )}
                   </div>
 
