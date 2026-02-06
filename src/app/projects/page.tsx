@@ -1,7 +1,15 @@
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
 import projectsData from '@/data/projectsData.json';
 import { ExternalLink, Github } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Projects() {
   return (
@@ -31,9 +39,40 @@ export default function Projects() {
               >
                 {/* Project Image/Icon */}
                 <div className="mb-6">
-                  <div className="w-full h-48 bg-gradient-secondary rounded-lg flex items-center justify-center text-6xl mb-4">
-                    {project.image ? project.image : '💼'}
+                  <div className="w-full bg-gradient-secondary rounded-lg mb-4 overflow-hidden">
+                    {project.images && project.images.length > 0 ? (
+                      <Carousel className="w-full" opts={{ loop: true }}>
+                        <CarouselContent>
+                          {project.images.map((img) => (
+                            <CarouselItem key={img}>
+                              <div className="relative w-full aspect-video">
+                                <Image
+                                  src={img}
+                                  alt={project.title}
+                                  width={1920}
+                                  height={1080}
+                                  className="w-full h-full object-cover"
+                                  sizes="100%"
+                                />
+                              </div>
+                            </CarouselItem>
+                          ))}
+                        </CarouselContent>
+
+                        {project.images.length > 1 && (
+                          <>
+                            <CarouselPrevious className="left-2" />
+                            <CarouselNext className="right-2" />
+                          </>
+                        )}
+                      </Carousel>
+                    ) : (
+                      <div className="aspect-video flex items-center justify-center text-6xl">
+                        💼
+                      </div>
+                    )}
                   </div>
+
                   {project.isPrivate && (
                     <span className="inline-block px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">
                       Private Use

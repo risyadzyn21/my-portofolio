@@ -3,7 +3,7 @@
     "title": "Zyn Assistant",
     "description": "A modern chat application built with Vue 3 and Gemini API, featuring real-time messaging, composable architecture, and a scalable front-end structure.",
     "images": [
-      "https://cdn.jsdelivr.net/gh/risyadzyn21/portfolio-assets@ed507c4f83f38b6af0bd29a970470c7d33549297/images/zyn-assistant.png"
+      "https://cdn.jsdelivr.net/gh/risyadzyn21/portfolio-assets@main/images/zyn-assistant/zyn-assistant.png"
     ],
     "technologies": [
       "Vue 3",
@@ -20,7 +20,7 @@
     "title": "Risyad.dev (Portfolio Website)",
     "description": "A collection of real-world projects and technical explorations showcasing my journey as a software engineer. I focus on building practical, maintainable applications while continuously learning and experimenting with modern technologies.",
     "images": [
-      "https://cdn.jsdelivr.net/gh/risyadzyn21/portfolio-assets@294a69661639181ee19e831855b9fc4a3261c958/images/risyad-dev.png"
+      "https://cdn.jsdelivr.net/gh/risyadzyn21/portfolio-assets@main/images/risyad-dev/risyad-dev.png"
     ],
     "technologies": [
       "Next.js",
@@ -33,9 +33,15 @@
     "isPersonaProject": true
   },
   {
-    "title": "Smart Trace",
-    "description": "A modern e-commerce platform built with React, TypeScript, and Stripe. Features include product catalog, shopping cart, and secure checkout.",
-    "images": "",
+    "title": "Smarttrace Traceability Platform",
+    "description": "Enterprise traceability platform to track palm oil supply chains from raw materials to finished consumer products, supporting regulatory compliance aligned with European Union standards. ",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/risyadzyn21/portfolio-assets@main/images/smarttrace/SmartTrace-Login.png",
+      "https://cdn.jsdelivr.net/gh/risyadzyn21/portfolio-assets@main/images/smarttrace/SmartTrace-List.png",
+      "https://cdn.jsdelivr.net/gh/risyadzyn21/portfolio-assets@main/images/smarttrace/SmartTrace-Detail.png",
+      "https://cdn.jsdelivr.net/gh/risyadzyn21/portfolio-assets@main/images/smarttrace/SmartTrace-Geolocation.png",
+      "https://cdn.jsdelivr.net/gh/risyadzyn21/portfolio-assets@main/images/smarttrace/SmartTrace-Monitoring.png"
+    ],
     "technologies": [
       "React",
       "JavaScript",
@@ -50,26 +56,28 @@
   },
   {
     "title": "Block Explorer",
-    "description": "A modern e-commerce platform built with React, TypeScript, and Stripe. Features include product catalog, shopping cart, and secure checkout.",
-    "images": "",
+    "description": "Blockchain monitoring platform to visualize blocks, and 7-daily transaction trends for operational oversight",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/risyadzyn21/portfolio-assets@main/images/block-explorer/Block-Explorer-home.png",
+      "https://cdn.jsdelivr.net/gh/risyadzyn21/portfolio-assets@main/images/block-explorer/Block-Explorer-tx-detail.png"
+    ],
     "technologies": [
       "React",
       "JavaScript"
     ],
-    "liveLink": "",
+    "liveLink": "https://explorer.haratoken.app/",
     "repoLink": "",
-    "isPrivate": true,
+    "isPrivate": false,
     "isPersonaProject": false
   },
   {
     "title": "SI-ASN (Old Version)",
-    "description": "A beautiful weather dashboard with location-based forecasts, interactive maps, and detailed weather analytics.",
-    "images": "",
+    "description": "Government HR information system supporting civil servant management.",
+    "images": [],
     "technologies": [
-      "React",
-      "Chart.js",
-      "OpenWeather API",
-      "Tailwind CSS"
+      "Next.js",
+      "TypeScript",
+      "Bootstrap"
     ],
     "liveLink": "",
     "repoLink": "",
@@ -78,56 +86,41 @@
   },
   {
     "title": "MAPP V2",
-    "description": "A responsive portfolio website showcasing modern design principles and smooth animations.",
-    "images": "",
+    "description": "Web system for managing and monitoring power plant data across Indonesia.",
+    "images": [],
     "technologies": [
-      "React",
-      "Framer Motion",
-      "Tailwind CSS",
-      "Vercel"
+      "Vue 3",
+      "TypeScript",
+      "Tailwind CSS"
     ],
     "liveLink": "",
     "repoLink": "",
-    "isPrivate": false,
+    "isPrivate": true,
     "isPersonaProject": false
   },
   {
     "title": "BBO",
-    "description": "A responsive portfolio website showcasing modern design principles and smooth animations.",
-    "image": "",
+    "description": "Web platform for managing and monitoring the coal supply chain for power plants across Indonesia.",
+    "image": [],
     "technologies": [
-      "React",
-      "Framer Motion",
-      "Tailwind CSS",
-      "Vercel"
+      "Vue 3",
+      "TypeScript",
+      "Tailwind CSS"
     ],
     "liveLink": "",
     "repoLink": "",
-    "isPrivate": false,
+    "isPrivate": true,
     "isPersonaProject": false
   },
   {
     "title": "Purposeful People NFT Mint",
-    "description": "A modern e-commerce platform built with React, TypeScript, and Stripe. Features include product catalog, shopping cart, and secure checkout.",
-    "image": "",
-    "technologies": [
-      "React",
-      "TypeScript",
-      "Tailwind CSS"
+    "description": "A lightweight platform built for seamless NFT minting. It provides a straightforward interface that allows users to mint digital assets quickly and efficiently, focusing on accessibility, speed, and a smooth user experience.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/risyadzyn21/portfolio-assets@main/images/purposeful-people/purposeful-people-mint.png"
     ],
-    "liveLink": "",
-    "repoLink": "",
-    "isPrivate": false,
-    "isPersonaProject": false
-  },
-  {
-    "title": "Meta Forest Society",
-    "description": "A modern e-commerce platform built with React, TypeScript, and Stripe. Features include product catalog, shopping cart, and secure checkout.",
-    "image": "",
     "technologies": [
       "React",
-      "TypeScript",
-      "Tailwind CSS"
+      "JavaScript"
     ],
     "liveLink": "",
     "repoLink": "",
@@ -136,29 +129,53 @@
   },
   {
     "title": "Mutant Wolf Pack",
-    "description": "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-    "image": "",
-    "technologies": [
-      "Next.js",
-      "Prisma",
-      "PostgreSQL",
-      "Framer Motion"
+    "description": "Mutant Wolf Pack is a collection of 3,000 hand-drawn, Ethereum-based NFTs inspired by 1980s horror comics and punk culture, featuring unique wolf characters. Sold out in June 2022, this collection also includes apparel and accessories like t-shirts and hats. The brand represents themes of instinct, solitude, resilience, and bravery.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/risyadzyn21/portfolio-assets@main/images/mutant-wolf-pack/mwp-landing-page.jpg",
+      "https://cdn.jsdelivr.net/gh/risyadzyn21/portfolio-assets@main/images/mutant-wolf-pack/mwp-staking.jpg",
+      "https://cdn.jsdelivr.net/gh/risyadzyn21/portfolio-assets@main/images/mutant-wolf-pack/mwp-the-wolf-den.jpg"
     ],
-    "liveLink": "",
+    "technologies": [
+      "React",
+      "JavaScript",
+      "Web3.js"
+    ],
+    "liveLink": "http://mutantwolfpack.com/",
+    "repoLink": "",
+    "isPrivate": false,
+    "isPersonaProject": false
+  },
+  {
+    "title": "Meta Forest Society",
+    "description": "Indonesia's first social impact NFT project, launched in collaboration with HARA to support farmers, particularly women in the ginger sector. It uses blockchain technology to bridge the digital and real world, with 20% of initial NFT sales funding agricultural improvements and community empowerment.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/risyadzyn21/portfolio-assets@main/images/mfs/mfs-hero.png",
+      "https://cdn.jsdelivr.net/gh/risyadzyn21/portfolio-assets@main/images/mfs/mfs-lore.png",
+      "https://cdn.jsdelivr.net/gh/risyadzyn21/portfolio-assets@main/images/mfs/mfs-journey.png",
+      "https://cdn.jsdelivr.net/gh/risyadzyn21/portfolio-assets@main/images/mfs/mfs-quest.png",
+      "https://cdn.jsdelivr.net/gh/risyadzyn21/portfolio-assets@main/images/mfs/mfs.png"
+    ],
+    "technologies": [
+      "React",
+      "JavaScript",
+      "Web3.js"
+    ],
+    "liveLink": "http://metaforestsociety.xyz/",
     "repoLink": "",
     "isPrivate": false,
     "isPersonaProject": false
   },
   {
     "title": "Kas-E",
-    "description": "A modern e-commerce platform built with React, TypeScript, and Stripe. Features include product catalog, shopping cart, and secure checkout.",
-    "image": "",
+    "description": "KAS-E is an expense tracking platform that helps users monitor and manage their finances with clarity and ease. It provides real-time cash flow visibility, organized expense tracking, and simple financial insights, enabling smarter spending decisions through a clean and intuitive interface.",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/risyadzyn21/portfolio-assets@main/images/kas-e/kas-e.png"
+    ],
     "technologies": [
       "React",
-      "TypeScript",
-      "Tailwind CSS"
+      "JavaScript"
     ],
-    "liveLink": "",
+    "liveLink": "https://kas-e.vercel.app/",
     "repoLink": "https://gitlab.com/binarxglints_batch14/finalproject/kas-e/frontendkas-e/-/tree/development?ref_type=heads",
     "isPrivate": false,
     "isPersonaProject": false
