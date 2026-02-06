@@ -76,6 +76,12 @@ const Projects = () => {
                     )}
                   </div>
 
+                  {project.isPersonaProject && (
+                    <span className="inline-block px-3 py-1 bg-green-200 text-green-700 text-xs font-medium rounded-full">
+                      Personal Project
+                    </span>
+                  )}
+
                   {project.isPrivate && (
                     <span className="inline-block px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">
                       Private Use

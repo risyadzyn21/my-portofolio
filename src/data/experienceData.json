@@ -12,15 +12,13 @@
       "Tailwind CSS"
     ],
     "responsibility": [
-      "Develop reusable component for the website.",
-      "Develop graphs for data visualization.",
-      "Develop UI based on designs that have been made by the UI/UX team.",
-      "Develop blockchain related website.",
-      "Integrate between UI and database via API.",
-      "Make a website that can do transactions between user and crypto wallet (Metamask Wallet).",
-      "Make a website for public and internal purpose.",
-      "Implement unit tests.",
-      "Make a responsive website."
+      "Developed and maintained production web applications in blockchain and supply chain domains.",
+      "Implemented interactive, data-driven dashboards based on UI/UX specifications.",
+      "Collaborated with blockchain engineers to build and maintain decentralized web applications (dApps).",
+      "Integrated Web3 functionalities, including wallet connectivity and smart contract interactions.",
+      "Built reusable and scalable React components following clean code and maintainability principles.",
+      "Ensured cross-browser compatibility, responsive behavior, and basic accessibility compliance.",
+      "Implemented unit tests to improve application stability and reliability."
     ],
     "companyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl9lNp8EmlvP7Tmp4q9IWa8ZxGe6DZ9WYiJQ&s",
     "type": "Full-time"
@@ -38,11 +36,10 @@
       "Git"
     ],
     "responsibility": [
-      "Develop multiple website applications for our client PT Perusahaan Listrik Negara (Persero).",
-      "Develop components for page requirements such as form, tab, table, dropdown, etc.",
-      "Assemble pages with reusable components based on page requirement services.",
-      "Integration with backend via API.",
-      "Bug fixing."
+      "Contributed to a government HR information system supporting civil servant management processes.",
+      "Implemented application features based on service and regulatory requirements.",
+      "Integrated frontend modules with backend APIs and internal services.",
+      "Supported system stability through bug fixing, feature enhancements, and maintenance."
     ],
     "companyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4KrJ6GMwnjw124ypivjgDi1AkvLAmw9ERSg&s",
     "type": "Freelance"

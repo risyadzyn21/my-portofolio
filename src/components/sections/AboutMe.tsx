@@ -18,14 +18,13 @@ const AboutMe = () => {
             {/* Text Content */}
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a passionate frontend developer with over 3 years of
-                experience creating exceptional digital experiences. I
-                specialize in React, TypeScript, and modern web technologies.
+                I’m a frontend-focused software engineer with 4+ years of
+                experience building real-world web applications. I specialize in
+                React, TypeScript, and modern frontend architecture.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I enjoy exploring new technologies, experimenting with fresh
-                ideas, and continuously improving my skills to build better,
-                smarter web experiences.
+                I enjoy exploring new technologies, experimenting with ideas,
+                and continuously improving how I design and build systems.
               </p>
 
               {/* Stats */}
