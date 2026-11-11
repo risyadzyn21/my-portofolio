@@ -22,7 +22,7 @@
     "liveLink": "https://st-grow.haratoken.io/",
     "repoLink": "",
     "isPrivate": false,
-    "isPersonaProject": false
+    "isPersonalProject": false
   },
   {
     "title": "HART Migration to Solana",
@@ -39,7 +39,7 @@
     "liveLink": "https://moveintosolana.haratoken.io/",
     "repoLink": "",
     "isPrivate": false,
-    "isPersonaProject": false
+    "isPersonalProject": false
   },
   {
     "title": "Zyn Assistant",
@@ -56,7 +56,7 @@
     "liveLink": "https://zyn-assistant.vercel.app/",
     "repoLink": "https://github.com/risyadzyn21/zyn-assistant",
     "isPrivate": false,
-    "isPersonaProject": true
+    "isPersonalProject": true
   },
   {
     "title": "Smarttrace Traceability Platform",
@@ -78,7 +78,7 @@
     "liveLink": "",
     "repoLink": "",
     "isPrivate": true,
-    "isPersonaProject": false
+    "isPersonalProject": false
   },
   {
     "title": "Block Explorer",
@@ -94,7 +94,7 @@
     "liveLink": "https://explorer.haratoken.app/",
     "repoLink": "",
     "isPrivate": false,
-    "isPersonaProject": false
+    "isPersonalProject": false
   },
   {
     "title": "SI-ASN (Old Version)",
@@ -108,7 +108,7 @@
     "liveLink": "",
     "repoLink": "",
     "isPrivate": false,
-    "isPersonaProject": false
+    "isPersonalProject": false
   },
   {
     "title": "MAPP V2",
@@ -122,7 +122,7 @@
     "liveLink": "",
     "repoLink": "",
     "isPrivate": true,
-    "isPersonaProject": false
+    "isPersonalProject": false
   },
   {
     "title": "BBO",
@@ -136,7 +136,7 @@
     "liveLink": "",
     "repoLink": "",
     "isPrivate": true,
-    "isPersonaProject": false
+    "isPersonalProject": false
   },
   {
     "title": "Purposeful People NFT Mint",
@@ -151,7 +151,7 @@
     "liveLink": "",
     "repoLink": "",
     "isPrivate": false,
-    "isPersonaProject": false
+    "isPersonalProject": false
   },
   {
     "title": "Mutant Wolf Pack",
@@ -169,7 +169,7 @@
     "liveLink": "http://mutantwolfpack.com/",
     "repoLink": "",
     "isPrivate": false,
-    "isPersonaProject": false
+    "isPersonalProject": false
   },
   {
     "title": "Meta Forest Society",
@@ -189,7 +189,7 @@
     "liveLink": "http://metaforestsociety.xyz/",
     "repoLink": "",
     "isPrivate": false,
-    "isPersonaProject": false
+    "isPersonalProject": false
   },
   {
     "title": "Kas-E",
@@ -204,6 +204,6 @@
     "liveLink": "https://kas-e.vercel.app/",
     "repoLink": "https://gitlab.com/binarxglints_batch14/finalproject/kas-e/frontendkas-e/-/tree/development?ref_type=heads",
     "isPrivate": false,
-    "isPersonaProject": true
+    "isPersonalProject": true
   }
 ]

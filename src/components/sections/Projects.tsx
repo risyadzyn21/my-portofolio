@@ -16,7 +16,7 @@ const Projects = () => {
 
       <p className="mt-12">
         <Link href="/projects" className="text-link">
-          See all {projectsData.length} projects
+          See all projects
         </Link>
       </p>
     </Section>

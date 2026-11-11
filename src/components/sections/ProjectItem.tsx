@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { BriefcaseBusiness } from 'lucide-react';
 import {
   Carousel,
   CarouselContent,
@@ -27,8 +28,8 @@ const ProjectItem = ({ project, stacked = false }: ProjectItemProps) => {
           : 'grid gap-6 md:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] md:gap-10'
       }
     >
-      {images.length > 0 && (
-        <div className="self-start overflow-hidden rounded-sm bg-secondary">
+      <div className="aspect-video w-full self-start overflow-hidden rounded-sm bg-secondary">
+        {images.length > 0 ? (
           <Carousel className="w-full" opts={{ loop: true }}>
             <CarouselContent>
               {images.map((img) => (
@@ -51,10 +52,22 @@ const ProjectItem = ({ project, stacked = false }: ProjectItemProps) => {
               </>
             )}
           </Carousel>
-        </div>
-      )}
+        ) : (
+          <div
+            role="img"
+            aria-label={`${project.title} has no screenshot`}
+            className="flex size-full items-center justify-center border border-dashed border-input text-muted-foreground/50"
+          >
+            <BriefcaseBusiness
+              className="size-10"
+              strokeWidth={1.25}
+              aria-hidden
+            />
+          </div>
+        )}
+      </div>
 
-      <div className={images.length === 0 && !stacked ? 'md:col-span-2' : ''}>
+      <div>
         <h3 className="text-2xl font-semibold tracking-tight">
           {project.title}
         </h3>
@@ -86,7 +99,7 @@ const ProjectItem = ({ project, stacked = false }: ProjectItemProps) => {
               View code
             </a>
           )}
-          {project.isPersonaProject && (
+          {project.isPersonalProject && (
             <span className="text-muted-foreground">Personal project</span>
           )}
           {project.isPrivate && (
