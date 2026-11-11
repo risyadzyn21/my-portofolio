@@ -1,12 +1,5 @@
-import Image from 'next/image';
+import ProjectGallery from './ProjectGallery';
 import { BriefcaseBusiness } from 'lucide-react';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from '@/components/ui/carousel';
 import projectsData from '@/data/projectsData.json';
 
 type Project = (typeof projectsData)[number];
@@ -30,28 +23,7 @@ const ProjectItem = ({ project, stacked = false }: ProjectItemProps) => {
     >
       <div className="aspect-video w-full self-start overflow-hidden rounded-xl bg-secondary">
         {images.length > 0 ? (
-          <Carousel className="w-full" opts={{ loop: true }}>
-            <CarouselContent>
-              {images.map((img) => (
-                <CarouselItem key={img}>
-                  <Image
-                    src={img}
-                    alt={`${project.title} screenshot`}
-                    width={1920}
-                    height={1080}
-                    sizes="(min-width: 768px) 55vw, 100vw"
-                    className="aspect-video w-full object-cover"
-                  />
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            {images.length > 1 && (
-              <>
-                <CarouselPrevious className="left-2 cursor-pointer rounded-sm" />
-                <CarouselNext className="right-2 cursor-pointer rounded-sm" />
-              </>
-            )}
-          </Carousel>
+          <ProjectGallery images={images} title={project.title} />
         ) : (
           <div
             role="img"
