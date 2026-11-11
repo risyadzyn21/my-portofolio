@@ -38,7 +38,7 @@ const AboutMe = () => {
           alt="Portrait of Risyad Ziyan Arkham"
           width={480}
           height={600}
-          className="aspect-[4/5] w-full max-w-60 rounded-sm bg-secondary object-cover lg:max-w-none"
+          className="mx-auto aspect-[4/5] w-full max-w-60 lg:mx-0 rounded-xl bg-secondary object-cover lg:max-w-none"
         />
       </div>
     </Section>
