@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
 import {
   Sheet,
   SheetContent,
@@ -10,15 +9,14 @@ import {
   SheetTitle,
   SheetTrigger,
 } from '@/components/ui/sheet';
-import { Menu, X } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Menu } from 'lucide-react';
 
 const menuItems = [
-  { name: 'Home', href: '#home' },
-  { name: 'About Me', href: '#aboutme' },
+  { name: 'About', href: '#aboutme' },
   { name: 'Skills', href: '#skills' },
   { name: 'Experience', href: '#experience' },
   { name: 'Projects', href: '#projects' },
-  { name: 'Contact', href: '#contact' },
 ];
 
 const NavigationHeader: React.FC = () => {
@@ -26,101 +24,83 @@ const NavigationHeader: React.FC = () => {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener('scroll', handleScroll);
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
-    if (element) element.scrollIntoView({ behavior: 'smooth' });
+    if (element) element.scrollIntoView();
     setOpen(false);
   };
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed inset-x-0 top-0 z-50 border-b transition-colors duration-200 ${
         isScrolled
-          ? 'bg-[hsl(var(--background)/0.8)] backdrop-blur-sm'
-          : 'bg-transparent'
+          ? 'border-border bg-background'
+          : 'border-transparent bg-transparent'
       }`}
     >
-      <div className="container mx-auto px-6">
-        <div className="flex items-center justify-between h-16">
-          {/* Name */}
-          <div className="text-xl font-bold gradient-text">Risyad.dev</div>
+      <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-6 md:px-10">
+        <Link href="#home" className="font-semibold tracking-tight">
+          Risyad.dev
+        </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            {menuItems.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className="text-foreground hover:text-primary transition-colors relative group"
-              >
-                {item.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
-              </Link>
-            ))}
-          </nav>
+        {/* Desktop navigation */}
+        <nav className="hidden items-center gap-8 text-sm md:flex">
+          {menuItems.map((item) => (
+            <Link
+              key={item.name}
+              href={item.href}
+              className="text-muted-foreground transition-colors hover:text-foreground"
+            >
+              {item.name}
+            </Link>
+          ))}
+          <Button asChild size="sm">
+            <Link href="#contact">Contact</Link>
+          </Button>
+        </nav>
 
-          {/* Hire Button */}
-          <div className="hidden md:block">
+        {/* Mobile menu */}
+        <Sheet open={open} onOpenChange={setOpen}>
+          <SheetTrigger asChild>
             <Button
-              onClick={() => scrollToSection('#contact')}
-              className="glass hover-scaleup cursor-pointer"
+              variant="ghost"
+              size="icon"
+              className="md:hidden"
+              aria-label="Open menu"
             >
-              Hire Me
+              <Menu className="size-5" />
             </Button>
-          </div>
+          </SheetTrigger>
 
-          {/* Mobile Menu (Sheet from Top) */}
-          <Sheet open={open} onOpenChange={setOpen}>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="sm" className="md:hidden">
-                {open ? (
-                  <X className="w-5 h-5" />
-                ) : (
-                  <Menu className="w-5 h-5" />
-                )}
-              </Button>
-            </SheetTrigger>
+          <SheetContent
+            side="top"
+            className="h-full border-none bg-background p-0"
+          >
+            <SheetHeader className="px-6 py-5">
+              <SheetTitle className="text-base">Risyad.dev</SheetTitle>
+            </SheetHeader>
 
-            <SheetContent
-              side="top"
-              className="bg-[hsl(var(--background)/0.8)] backdrop-blur-md border-none p-0 h-full"
-            >
-              <SheetHeader className="text-center py-4">
-                <SheetTitle className="gradient-text text-xl font-bold">
-                  Risyad's Space
-                </SheetTitle>
-              </SheetHeader>
-
-              <div className="container mx-auto px-6 py-6">
-                <div className="flex flex-col space-y-6">
-                  {menuItems.map((item) => (
-                    <button
-                      key={item.name}
-                      onClick={() => scrollToSection(item.href)}
-                      className="text-lg text-foreground hover:text-primary transition-colors text-left"
-                    >
-                      {item.name}
-                    </button>
-                  ))}
-                  <Button
-                    onClick={() => scrollToSection('#contact')}
-                    className="glass hover-lift w-full"
+            <nav className="flex flex-col gap-6 px-6 py-6">
+              {[...menuItems, { name: 'Contact', href: '#contact' }].map(
+                (item) => (
+                  <button
+                    key={item.name}
+                    onClick={() => scrollToSection(item.href)}
+                    className="text-left text-4xl font-semibold tracking-tight"
                   >
-                    Hire Me
-                  </Button>
-                </div>
-              </div>
-            </SheetContent>
-          </Sheet>
-        </div>
+                    {item.name}
+                  </button>
+                ),
+              )}
+            </nav>
+          </SheetContent>
+        </Sheet>
       </div>
     </header>
   );

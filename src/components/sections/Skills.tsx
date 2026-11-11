@@ -1,73 +1,40 @@
-import { Card } from '@/components/ui/card';
+import { Section } from '@/components/layout';
 import skillsData from '@/data/skillsData.json';
 import techUseData from '@/data/techUseData.json';
 
 const Skills = () => {
+  const listed = new Set(
+    skillsData.flatMap((category) => category.skills.map((s) => s.name)),
+  );
+  const others = techUseData.filter((tech) => !listed.has(tech));
+
   return (
-    <section className="py-20 relative">
-      <div className="container mx-auto px-6">
-        <div className="max-w-6xl mx-auto">
-          {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text pb-2">
-              Skills & Technologies
-            </h2>
-            <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full" />
-          </div>
+    <Section id="skills" title="Skills">
+      <div className="space-y-10">
+        {skillsData.map((category) => {
+          const names = [...category.skills]
+            .sort((a, b) => b.level - a.level)
+            .map((skill) => skill.name);
 
-          {/* Skill Categories */}
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            {skillsData.map((category) => {
-              const sortedSkills = [...category.skills].sort(
-                (a, b) => b.level - a.level,
-              );
-              return (
-                <Card key={category.title} className="p-8 glass card-shadow">
-                  <h3 className="text-2xl font-bold mb-6 gradient-text">
-                    {category.title}
-                  </h3>
-                  <div className="space-y-6">
-                    {sortedSkills.map((skill) => (
-                      <div key={skill.name}>
-                        <div className="flex justify-between mb-2">
-                          <span className="font-medium">{skill.name}</span>
-                          <span className="flex">
-                            {Array.from({ length: 5 }).map((_, i) => (
-                              <span key={i + 'star'}>
-                                {i < skill.level ? '⭐' : null}
-                              </span>
-                            ))}
-                          </span>
-                        </div>
-                        <div className="w-full bg-secondary rounded-full h-1"></div>
-                      </div>
-                    ))}
-                  </div>
-                </Card>
-              );
-            })}
-          </div>
-
-          {/* Technology Tags */}
-          <Card className="p-8 glass card-shadow">
-            <h3 className="text-2xl font-bold mb-6 gradient-text text-center">
-              Technologies I Work With
-            </h3>
-            <div className="flex flex-wrap gap-3 justify-center">
-              {techUseData.map((tech, index) => (
-                <span
-                  key={tech}
-                  className="px-4 py-2 bg-secondary/50 rounded-full text-sm font-medium transition-smooth cursor-default"
-                  style={{ animationDelay: `${index * 100}ms` }}
-                >
-                  {tech}
-                </span>
-              ))}
+          return (
+            <div
+              key={category.title}
+              className="grid gap-2 md:grid-cols-[11rem_1fr] md:gap-8"
+            >
+              <h3 className="text-muted-foreground">{category.title}</h3>
+              <p className="text-2xl font-medium leading-snug tracking-tight md:text-3xl">
+                {names.join(', ')}
+              </p>
             </div>
-          </Card>
+          );
+        })}
+
+        <div className="grid gap-2 border-t border-border pt-10 md:grid-cols-[11rem_1fr] md:gap-8">
+          <h3 className="text-muted-foreground">Also use</h3>
+          <p className="max-w-[60ch] text-lg">{others.join(', ')}</p>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 
