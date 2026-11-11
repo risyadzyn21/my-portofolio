@@ -86,6 +86,9 @@ const ProjectItem = ({ project, stacked = false }: ProjectItemProps) => {
               View code
             </a>
           )}
+          {project.isPersonaProject && (
+            <span className="text-muted-foreground">Personal project</span>
+          )}
           {project.isPrivate && (
             <span className="text-muted-foreground">
               Private project, no public link

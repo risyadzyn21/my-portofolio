@@ -14,15 +14,13 @@ const AboutMe = () => {
       <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_15rem] lg:gap-14">
         <div className="max-w-[60ch] space-y-5 text-lg">
           <p>
-            Since 2022 I have built frontends at Dattabot and on freelance
-            projects: data visualization dashboards, blockchain sites that
-            connect to wallets like MetaMask, and public and internal websites,
-            including one for a national government agency.
+            I’m a frontend-focused software engineer with 4+ years of experience
+            building real-world web applications. I specialize in React,
+            TypeScript, and modern frontend architecture.
           </p>
           <p>
-            I write React and TypeScript every day and I am comfortable in Vue.
-            I like turning a design into components the rest of the team can
-            reuse and test.
+            I enjoy exploring new technologies, experimenting with ideas, and
+            continuously improving how I design and build systems.
           </p>
 
           <dl className="grid grid-cols-[auto_1fr] gap-x-8 gap-y-2 border-t border-border pt-6 text-base">
