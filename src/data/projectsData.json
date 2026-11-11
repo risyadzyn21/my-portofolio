@@ -1,5 +1,30 @@
 [
   {
+    "title": "Stake HART",
+    "description": "A blockchain-based RWA staking platform that enables users to stake HART tokens and participate in agricultural revenue-sharing through mechanisms. ",
+    "images": [
+      "https://cdn.jsdelivr.net/gh/risyadzyn21/portfolio-assets@main/images/stake-hara/landing-01-hero.png",
+      "https://cdn.jsdelivr.net/gh/risyadzyn21/portfolio-assets@main/images/stake-hara/connect-dark.png",
+      "https://cdn.jsdelivr.net/gh/risyadzyn21/portfolio-assets@main/images/stake-hara/dashboard-dark-fold.png",
+      "https://cdn.jsdelivr.net/gh/risyadzyn21/portfolio-assets@main/images/stake-hara/leaderboard-dark-fold.png",
+      "https://cdn.jsdelivr.net/gh/risyadzyn21/portfolio-assets@main/images/stake-hara/stake-dark-fold.png"
+    ],
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Motion",
+      "Solana",
+      "TanStack Query",
+      "Zustand",
+      "next-intl"
+    ],
+    "liveLink": "https://st-grow.haratoken.io/",
+    "repoLink": "",
+    "isPrivate": false,
+    "isPersonaProject": false
+  },
+  {
     "title": "HART Migration to Solana",
     "description": "A responsive landing page designed to communicate HARA's HART-to-Solana migration, featuring migration information, FAQs, and links to the official migration platform.",
     "images": [

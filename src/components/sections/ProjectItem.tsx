@@ -46,8 +46,8 @@ const ProjectItem = ({ project, stacked = false }: ProjectItemProps) => {
             </CarouselContent>
             {images.length > 1 && (
               <>
-                <CarouselPrevious className="left-2 rounded-sm" />
-                <CarouselNext className="right-2 rounded-sm" />
+                <CarouselPrevious className="left-2 cursor-pointer rounded-sm" />
+                <CarouselNext className="right-2 cursor-pointer rounded-sm" />
               </>
             )}
           </Carousel>
