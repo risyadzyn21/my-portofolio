@@ -28,7 +28,7 @@ const ProjectItem = ({ project, stacked = false }: ProjectItemProps) => {
           : 'grid gap-6 md:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] md:gap-10'
       }
     >
-      <div className="aspect-video w-full self-start overflow-hidden rounded-sm bg-secondary">
+      <div className="aspect-video w-full self-start overflow-hidden rounded-xl bg-secondary">
         {images.length > 0 ? (
           <Carousel className="w-full" opts={{ loop: true }}>
             <CarouselContent>
