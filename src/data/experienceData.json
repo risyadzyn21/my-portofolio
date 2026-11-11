@@ -4,12 +4,14 @@
     "title": "Frontend Developer",
     "company": "Dattabot",
     "period": "Jan 2022 - Present",
-    "description": "Leading frontend development for enterprise applications using React and TypeScript. Mentoring junior developers and establishing best practices.",
+    "description": "Building production web applications in blockchain and supply chain domains.",
     "technologies": [
       "React",
-      "TypeScript",
+      "Vue",
       "Next.js",
-      "Tailwind CSS"
+      "TypeScript",
+      "Web3.js",
+      "Vitest"
     ],
     "responsibility": [
       "Developed and maintained production web applications in blockchain and supply chain domains.",
@@ -26,9 +28,9 @@
   {
     "id": 2,
     "title": "Frontend Developer",
-    "company": "Digital Aman Sentosa Indonesia",
+    "company": "PT Digital Aman Sentosa Indonesia, for PT PLN (Persero)",
     "period": "Mar 2024 - Oct 2024",
-    "description": "Developed responsive web applications and collaborated with design teams to create seamless user experiences.",
+    "description": "Built enterprise web applications for coal supply chain operations and power plant data management.",
     "technologies": [
       "React",
       "JavaScript",
@@ -36,10 +38,10 @@
       "Git"
     ],
     "responsibility": [
-      "Contributed to a government HR information system supporting civil servant management processes.",
-      "Implemented application features based on service and regulatory requirements.",
-      "Integrated frontend modules with backend APIs and internal services.",
-      "Supported system stability through bug fixing, feature enhancements, and maintenance."
+      "Developed enterprise web applications supporting coal supply chain operations and power plant data management systems.",
+      "Implemented modular frontend structures using reusable components.",
+      "Translated service and business requirements into functional application interfaces.",
+      "Integrated frontend applications with backend services and APIs."
     ],
     "companyLogo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4KrJ6GMwnjw124ypivjgDi1AkvLAmw9ERSg&s",
     "type": "Freelance"
@@ -49,19 +51,16 @@
     "title": "Frontend Developer",
     "company": "Badan Kepegawaian Negara Republik Indonesia",
     "period": "Oct 2022 - Dec 2022",
-    "description": "Built and maintained web applications, participated in code reviews, and contributed to the company's design system.",
+    "description": "Contributed to a government HR information system supporting civil servant management.",
     "technologies": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "React"
+      "Next.js",
+      "TypeScript"
     ],
     "responsibility": [
-      "Develop Web App System called Sistem Informasi Aparatur Sipil Negara (SIASN).",
-      "Develop a feature based on requirements.",
-      "Handle features in promotion service, mutation service, and refreshment service.",
-      "Integration with backend via API.",
-      "Bug fixing."
+      "Contributed to a government HR information system supporting civil servant management processes.",
+      "Implemented application features based on service and regulatory requirements.",
+      "Integrated frontend modules with backend APIs and internal services.",
+      "Supported system stability through bug fixing, feature enhancements, and maintenance."
     ],
     "companyLogo": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Logo_Badan_Kepegawaian_Negara.png",
     "type": "Freelance"
