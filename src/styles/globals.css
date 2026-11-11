@@ -136,7 +136,52 @@
   }
 }
 
+/* Modal open and close. Radix waits for these to finish before unmounting. */
+.modal-overlay[data-state='open'] {
+  animation: modal-fade-in 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.modal-overlay[data-state='closed'] {
+  animation: modal-fade-out 0.25s cubic-bezier(0.4, 0, 1, 1) forwards;
+}
+.modal-content {
+  will-change: transform, opacity;
+}
+.modal-content[data-state='open'] {
+  animation: modal-pop-in 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.modal-content[data-state='closed'] {
+  animation: modal-pop-out 0.25s cubic-bezier(0.4, 0, 1, 1) forwards;
+}
+
+@keyframes modal-fade-in {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes modal-fade-out {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes modal-pop-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.97);
+  }
+}
+@keyframes modal-pop-out {
+  to {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
+  .modal-overlay,
+  .modal-content {
+    animation: none !important;
+  }
+
   .name-line > span {
     animation: none;
   }
