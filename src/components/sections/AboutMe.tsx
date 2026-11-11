@@ -1,87 +1,49 @@
 import Image from 'next/image';
-import { Card } from '@/components/ui/card';
+import { Section } from '@/components/layout';
+
+const facts = [
+  { label: 'Based in', value: 'Serang, Indonesia' },
+  { label: 'Role', value: 'Frontend developer' },
+  { label: 'Experience', value: '4+ years' },
+  { label: 'Works with', value: 'React, TypeScript' },
+];
 
 const AboutMe = () => {
   return (
-    <section className="py-20 relative">
-      <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto">
-          {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text pb-2">
-              About Me
-            </h2>
-            <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full" />
-          </div>
+    <Section id="aboutme" title="About">
+      <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_15rem] lg:gap-14">
+        <div className="max-w-[60ch] space-y-5 text-lg">
+          <p>
+            Since 2022 I have built frontends at Dattabot and on freelance
+            projects: data visualization dashboards, blockchain sites that
+            connect to wallets like MetaMask, and public and internal websites,
+            including one for a national government agency.
+          </p>
+          <p>
+            I write React and TypeScript every day and I am comfortable in Vue.
+            I like turning a design into components the rest of the team can
+            reuse and test.
+          </p>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Text Content */}
-            <div className="space-y-6">
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a passionate frontend developer with over 3 years of
-                experience creating exceptional digital experiences. I
-                specialize in React, TypeScript, and modern web technologies.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                I enjoy exploring new technologies, experimenting with fresh
-                ideas, and continuously improving my skills to build better,
-                smarter web experiences.
-              </p>
-
-              {/* Stats */}
-              <div className="grid grid-cols-2 gap-6 pt-6">
-                <div className="text-center">
-                  <div className="text-3xl font-bold gradient-text">10+</div>
-                  <div className="text-sm text-muted-foreground">
-                    Projects Completed
-                  </div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold gradient-text">4+</div>
-                  <div className="text-sm text-muted-foreground">
-                    Years Experience
-                  </div>
-                </div>
+          <dl className="grid grid-cols-[auto_1fr] gap-x-8 gap-y-2 border-t border-border pt-6 text-base">
+            {facts.map((fact) => (
+              <div key={fact.label} className="contents">
+                <dt className="text-muted-foreground">{fact.label}</dt>
+                <dd>{fact.value}</dd>
               </div>
-            </div>
-
-            {/* Profile Card */}
-            <Card className="p-8 glass card-shadow">
-              <div className="space-y-4">
-                <Image
-                  src="/images/me.jpg"
-                  alt=""
-                  width={128}
-                  height={128}
-                  className="w-[128px] h-[128px] mx-auto mb-6 object-cover rounded-full"
-                />
-
-                <h3 className="text-2xl font-bold text-center">
-                  Risyad Ziyan Arkham
-                </h3>
-                <p className="text-center text-muted-foreground">
-                  Frontend Developer
-                </p>
-                <div className="pt-4 space-y-2">
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Location:</span>
-                    <span>Serang, Indonesia</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Experience:</span>
-                    <span>4+ Years</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Specialty:</span>
-                    <span>React & TypeScript</span>
-                  </div>
-                </div>
-              </div>
-            </Card>
-          </div>
+            ))}
+          </dl>
         </div>
+
+        <Image
+          src="/images/me.jpg"
+          alt="Portrait of Risyad Ziyan Arkham"
+          width={480}
+          height={600}
+          className="aspect-[4/5] w-full max-w-60 rounded-sm bg-secondary object-cover lg:max-w-none"
+        />
       </div>
-    </section>
+    </Section>
   );
 };
 

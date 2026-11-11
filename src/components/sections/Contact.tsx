@@ -1,14 +1,19 @@
 'use client';
 
 import { useState } from 'react';
-import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Section } from '@/components/layout';
 
 const WEB3FORMS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY!;
 const WEB3FORMS_ENDPOINT = process.env.NEXT_PUBLIC_WEB3FORMS_ENDPOINT!;
+
+// Underline-only fields; focus thickens the underline and turns it blue.
+const fieldClass =
+  'rounded-none border-0 border-b border-input bg-transparent px-0 shadow-none focus-visible:border-primary focus-visible:shadow-[0_1px_0_0_var(--color-primary)] focus-visible:ring-0';
+
+const labelClass = 'mb-1 block text-sm text-muted-foreground';
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -46,181 +51,122 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-20 relative">
-      <div className="container mx-auto px-6">
-        <div className="max-w-6xl mx-auto">
-          {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text pb-2">
-              Let's Work Together
-            </h2>
-            <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full" />
-            <p className="text-lg text-muted-foreground mt-6 max-w-2xl mx-auto">
-              Have a project in mind? I'd love to hear from you. Let's discuss
-              how we can bring your ideas to life.
-            </p>
+    <Section id="contact" title="Contact">
+      <p className="text-lg text-muted-foreground">
+        Available for freelance work.
+      </p>
+      <a
+        href="mailto:risyadzyn@gmail.com"
+        className="text-link mt-2 inline-block break-all text-3xl font-semibold tracking-tight md:text-5xl"
+      >
+        risyadzyn@gmail.com
+      </a>
+
+      <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2">
+        <a
+          href="https://calendly.com/risyadzyn/30min"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-link"
+        >
+          Book a 30-minute call
+        </a>
+        <a
+          href="https://github.com/risyadzyn21"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-link"
+        >
+          GitHub
+        </a>
+        <a
+          href="https://www.linkedin.com/in/risyad-ziyan-arkham/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-link"
+        >
+          LinkedIn
+        </a>
+      </div>
+
+      <form
+        className="mt-16 max-w-xl space-y-8 border-t border-border pt-10"
+        onSubmit={handleSubmit}
+      >
+        <h3 className="text-xl font-semibold tracking-tight">
+          Or send a message
+        </h3>
+
+        <div className="grid gap-8 sm:grid-cols-2">
+          <div>
+            <label htmlFor="name" className={labelClass}>
+              Name
+            </label>
+            <Input
+              id="name"
+              name="name"
+              autoComplete="name"
+              className={fieldClass}
+              required
+            />
           </div>
-
-          <div className="grid md:grid-cols-2 gap-12">
-            {/* Contact Form */}
-            <Card className="p-8 glass card-shadow">
-              <h3 className="text-2xl font-bold mb-6">Send me a message</h3>
-              <form className="space-y-6" onSubmit={handleSubmit}>
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <label
-                      htmlFor="name"
-                      className="block text-sm font-medium mb-2"
-                    >
-                      Name
-                    </label>
-                    <Input
-                      id="name"
-                      name="name"
-                      placeholder="Your name"
-                      className="glass"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="email"
-                      className="block text-sm font-medium mb-2"
-                    >
-                      Email
-                    </label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      placeholder="your@email.com"
-                      className="glass"
-                      required
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="subject"
-                    className="block text-sm font-medium mb-2"
-                  >
-                    Subject
-                  </label>
-                  <Input
-                    id="subject"
-                    name="subject"
-                    placeholder="e.g. Job offer, project inquiry, or collaboration"
-                    className="glass"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-sm font-medium mb-2"
-                  >
-                    Message
-                  </label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    placeholder="Tell me what you'd like to work on - or how I can help you."
-                    className="glass min-h-[120px]"
-                    required
-                  />
-                </div>
-
-                <Button
-                  type="submit"
-                  className="w-full glass hover-scaleup glow cursor-pointer"
-                  disabled={isSubmitting}
-                >
-                  {isSubmitting ? 'Sending...' : 'Send Message'}
-                </Button>
-
-                {status === 'success' && (
-                  <p className="text-green-500 text-sm text-center">
-                    ✅ Message sent successfully!
-                  </p>
-                )}
-                {status === 'error' && (
-                  <p className="text-red-500 text-sm text-center">
-                    ❌ Failed to send message. Please try again.
-                  </p>
-                )}
-              </form>
-            </Card>
-
-            {/* Contact Info */}
-            <div className="space-y-8">
-              {/* Contact Details */}
-              <Card className="p-6 glass card-shadow">
-                <h3 className="text-xl font-bold mb-4">Get in touch</h3>
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3">
-                    <Mail className="w-5 h-5 text-primary" />
-                    <span>risyadzyn@gmail.com</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <span className="w-5 h-5 text-primary flex items-center justify-center">
-                      📍
-                    </span>
-                    <span>Serang, Indonesia</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <span className="w-5 h-5 text-primary flex items-center justify-center">
-                      🕒
-                    </span>
-                    <span>Available for freelance work</span>
-                  </div>
-                </div>
-              </Card>
-
-              {/* Social Links */}
-              <Card className="p-6 glass card-shadow">
-                <h3 className="text-xl font-bold mb-4">Follow me</h3>
-                <div className="grid grid-cols-2 gap-4">
-                  <a
-                    href="https://github.com/risyadzyn21"
-                    target="_blank"
-                    className="flex items-center gap-3 p-3 rounded-lg bg-secondary/50 hover:bg-secondary transition-smooth hover-scaleup"
-                  >
-                    <Github className="w-5 h-5" />
-                    <span>GitHub</span>
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/risyad-ziyan-arkham/"
-                    target="_blank"
-                    className="flex items-center gap-3 p-3 rounded-lg bg-secondary/50 hover:bg-secondary transition-smooth hover-scaleup"
-                  >
-                    <Linkedin className="w-5 h-5" />
-                    <span>LinkedIn</span>
-                  </a>
-                </div>
-              </Card>
-
-              {/* Call to Action */}
-              <Card className="p-6 glass card-shadow bg-gradient-primary text-primary-foreground">
-                <h3 className="text-xl font-bold mb-2">
-                  Ready to start your project?
-                </h3>
-                <p className="text-primary-foreground/80 mb-4">
-                  Let's discuss your ideas and create something amazing
-                  together.
-                </p>
-                <a href="https://calendly.com/risyadzyn/30min" target="_blank">
-                  <Button variant="secondary" className="w-full cursor-pointer">
-                    Schedule a Call
-                  </Button>
-                </a>
-              </Card>
-            </div>
+          <div>
+            <label htmlFor="email" className={labelClass}>
+              Email
+            </label>
+            <Input
+              id="email"
+              name="email"
+              type="email"
+              autoComplete="email"
+              className={fieldClass}
+              required
+            />
           </div>
         </div>
-      </div>
-    </section>
+
+        <div>
+          <label htmlFor="subject" className={labelClass}>
+            Subject
+          </label>
+          <Input
+            id="subject"
+            name="subject"
+            placeholder="Job offer, project inquiry or collaboration"
+            className={fieldClass}
+            required
+          />
+        </div>
+
+        <div>
+          <label htmlFor="message" className={labelClass}>
+            Message
+          </label>
+          <Textarea
+            id="message"
+            name="message"
+            className={`${fieldClass} min-h-28`}
+            required
+          />
+        </div>
+
+        <div className="flex flex-wrap items-center gap-6">
+          <Button type="submit" size="lg" disabled={isSubmitting}>
+            {isSubmitting ? 'Sending' : 'Send message'}
+          </Button>
+
+          <p role="status" className="text-sm">
+            {status === 'success' && 'Message sent. I will reply by email.'}
+            {status === 'error' && (
+              <span className="text-destructive">
+                Message not sent. Check your connection and try again, or email
+                me directly.
+              </span>
+            )}
+          </p>
+        </div>
+      </form>
+    </Section>
   );
 };
 
