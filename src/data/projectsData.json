@@ -34,22 +34,6 @@
     "isPersonaProject": true
   },
   {
-    "title": "Risyad.dev (Portfolio Website)",
-    "description": "A collection of real-world projects and technical explorations showcasing my journey as a software engineer. I focus on building practical, maintainable applications while continuously learning and experimenting with modern technologies.",
-    "images": [
-      "https://cdn.jsdelivr.net/gh/risyadzyn21/portfolio-assets@main/images/risyad-dev/risyad-dev.png"
-    ],
-    "technologies": [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS"
-    ],
-    "liveLink": "https://risyad-dev.vercel.app",
-    "repoLink": "https://github.com/risyadzyn21/my-portofolio",
-    "isPrivate": false,
-    "isPersonaProject": true
-  },
-  {
     "title": "Smarttrace Traceability Platform",
     "description": "Enterprise traceability platform to track palm oil supply chains from raw materials to finished consumer products, supporting regulatory compliance aligned with European Union standards. ",
     "images": [
